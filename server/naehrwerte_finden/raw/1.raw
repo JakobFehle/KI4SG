@@ -1,0 +1,1284 @@
+URL:http://www.chefkoch.de/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html
+DATE:Jan 30, 2011 6:18:29 AM
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		
+		<title>Rezept: Apfel - Rosinen - Muffins | Kuchen Rezepte</title>
+		
+		<meta http-equiv="content-language" content="de">
+		<meta name="description" content="Rezepte mit Bildern (bereits über 131.018), über 700.000 Hobbyköche - Europas beliebteste Kochseite">
+		<meta name="keywords" content="Kuchen, Rezepte, Kochrezepte">
+		<meta name="robots" content="INDEX,FOLLOW">
+		<meta name="revisit-after" content="21 days">
+		
+				
+					<link rel="alternate" type="application/rss+xml" title="Chefkoch.de: Rezept des Tages (RSS 2.0)" href="http://www.chefkoch.de/rss/rezept-des-tages.php">
+				
+		<link rel="SHORTCUT ICON" href="/favicon.ico">
+
+		
+				
+					<link rel="stylesheet" type="text/css" href="/css/main.css" media="all">
+				
+		<!--[if gt IE 5.0]>
+			<link rel="stylesheet" type="text/css" href="/css/main-ie.css" media="all">
+		<![endif]-->
+		
+										
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/rezept-tags.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/functions-searchflags-rezept.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/rezept-slideshow.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/milonic_src.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/mmenudom.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/menu_data.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/functions-2008-12-16.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/jquery-1.4.min.js"></script>
+					<script type="text/javascript" src="http://cdn.chefkoch.de/js/functions-rezept.js"></script>
+			</head>
+	
+	<body onClick="hideLoginForm(event);" onLoad="initSearchEngineLookup('Rezeptsammlungen Rezeptsammlung Rezepte Rezept lecker Chefkoch.de Chefkoch site:www.');">
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  Superbanner (Wallpaper)  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<span id="banner-wallpaper">
+			<div id="wallpaperbanner"></div>		</span>
+		
+		<div id="wrapper">
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!--  Header mit Suche, Navigation, etc.  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			<div id="header">
+				
+				<!--  Chefkoch-Logo //-->
+				<a href="http://www.chefkoch.de"><img id="header_logo" src="http://cdn-dus.chefkoch.de/img/ck-logo.gif" alt="" title="Chefkoch Homepage: über 145.921 Rezepte"></a>
+				
+				<!-- ~~~~~~~~~~~~ -->
+				<!--  Navigation  -->
+				<!-- ~~~~~~~~~~~~ -->
+				
+				<div class="navigation">
+					<ul class="tab_nav">
+						<li><a href="/">Startseite</a></li>
+						<li name="magazinmenu" id="magazinmenu"><a href="/magazin/" onMouseOver="popup('magazin','magazinmenu')" onMouseOut="popdown()">Magazin</a></li>
+						<li class="on" name="rezeptemenu" id="rezeptemenu"><a href="/rezepte/" onMouseOver="popup('rezepte','rezeptemenu')" onMouseOut="popdown()">Rezepte</a></li>
+						<li name="cktvmenu" id="cktvmenu"><a href="/magazin/6,103,0/Chefkoch/" onMouseOver="popup('cktv','cktvmenu')" onMouseOut="popdown()">Video / TV</a></li>
+						<li name="communitymenu" id="communitymenu" ><a href="/forum/" onMouseOver="popup('community','communitymenu')" onMouseOut="popdown()">Community</a></li>
+						<li name="shoppingmenu" id="shoppingmenu"><a href="/shop-katalog/" onMouseOver="popup('shopping','shoppingmenu')" onMouseOut="popdown()">Shopping</a></li>
+					</ul>
+				</div>
+				
+				<!-- Navigation rechts (myChefkoch) //-->
+				<div id="navigation_2" class="navigation_2">
+					<ul class="tab_nav">
+						<li name="mychefkochmenu" id="mychefkochmenu"><a href="/mychefkoch/einstellungen/" onMouseOver="popup('mychefkoch','mychefkochmenu')" onMouseOut="popdown()">myChefkoch</a></li>
+					</ul>
+				</div>
+				
+				<!-- Links (<a>) oben-rechts //-->
+				<div id="header_links">
+					<a href="/faq/">Hilfe & FAQ</a> |
+					<a href="/newsletter.php" rel="nofollow">Newsletter</a> |
+					<a href="http://www.cooksunited.co.uk">recipes in <img src="http://cdn-dus.chefkoch.de/img/flag-gb.gif" width="16" height="11" alt="Recipes in english" align="absbottom"></a>
+				</div>
+				
+				<!-- ~~~~~~~~~~~~~~ -->
+				<!--  Schnellsuche  -->
+				<!-- ~~~~~~~~~~~~~~ -->
+				
+				<div id="schnellsuche_bg">
+					<div id="schnellsuche">
+						
+						<form name="searchform" action="/suche.php" method="get">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td valign="middle" height="25">
+									<input type="text" id="inputfield_quicksearch" name="suche" class="input_schnellsuche_text" value="" size="50">
+									
+										&nbsp;<select name="wo">
+											<option value="0">... überall</option>
+											<option value="4">... nur Magazin</option>
+											<option value="2" selected>... nur Rezepte</option>
+											<option value="1">... nur Foren</option>
+																						<option value="7">... nur Gruppen</option>
+											<option value="3">... nur User</option>
+											<option value="6">... nur Shopping</option>
+										</select>&nbsp;
+									<input type="submit" value="suchen" align="absmiddle">
+								</td>
+							</tr>
+						</table>
+						</form>
+						
+					</div>
+					
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!--  myChefkoch (Login oder Buttons)  -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
+					<span id="mycook-top">
+						
+<script type="text/javascript">
+// Ruft das Einblenden des Loginformulares auf oder leitet zur Login-Seite weiter wenn der Layer nicht
+// existiert oder die Funktion fehlt (weil das externe Script (noch) nicht geladen worden ist)
+function checkLogin() {
+	
+	if ( document.getElementById("login_form") && typeof(window.showLoginForm) == 'function' ) {
+		showLoginForm();
+	} else {
+		document.location = '/login.php';
+	}
+	
+}
+</script>
+
+<div id="mychefkoch_login">
+	<img src="http://cdn-dus.chefkoch.de/img/layout/icon_login.gif" border="0" width="16" height="16" id="login_icon" alt="">
+
+		<script type="text/javascript">document.write('<a href="javascript:checkLogin();">Login<\/a>');</script>
+		
+		<noscript>
+			<a href="/login.php">Login</a>
+		</noscript>
+		
+	| <a href="/register/index.php">Mitglied werden !</a>
+</div>
+
+<div id="mychefkoch_welcome">
+	Willkommen bei Chefkoch.de: Rezepte tauschen, sammeln und veröffentlichen, neue Freunde finden und treffen! <a href="/register/index.php" style="text-decoration:underline;color:black;">Mehr erfahren ...</a> 
+</div>
+
+
+
+
+&nbsp;
+&nbsp;					</span>
+					
+				</div>
+				
+				<!-- ~~~~~~~~~~~~~~~~ -->
+				<!--  Login-Formular  -->
+				<!-- ~~~~~~~~~~~~~~~~ -->
+				
+				<span id="mycook-bottom">
+					
+
+<!-- Login-Formular //-->
+<form name="loginform" action="/login.php" method="post">
+<div id="login_form">
+
+	<table id="login_form_table" class="login_form_table" summary="Loginform" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="hidechefkoch">
+				<input type="text" name="username" id="login_username" value="Benutzername" class="input_login_username" onBlur="if (value == '') {value = 'Benutzername'}" onFocus="if (value == 'Benutzername') {value =''}">
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="hidechefkoch">
+				<input type="password" name="password" id="login_password" value="Passwort" class="input_login_password" onBlur="if (value == '') {value = 'Passwort'}" onFocus="if (value == 'Passwort') {value =''}">
+				<input type="image" src="http://cdn-dus.chefkoch.de/img/layout/input_login_submit.gif" alt="anmelden" name="anmelden" align="absmiddle">
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="login_form_save_text">
+				&nbsp; <input type="checkbox" id="alltimelogin" style="margin-left:-5px;" name="setalltimelogin" value="1"><label id="login_alltime" for="alltimelogin" style="cursor:text;">Daten dauerhaft speichern</label>
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace_2"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr><td class="login_form_line"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr><td class="login_form_fieldspace_2"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="login_form_forgotten">
+				<a href="/userdatalost.php" class="pwlostlink"><strong>Ihre Logindaten vergessen?</strong></a>
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace_3"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"><input type="submit" value="" style="border:none;background:transparent;"></td></tr>
+	</table>
+		
+</div>
+</form>
+				</span>
+				
+			</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  zusaetzliches JavaScript  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--  JS fuer Administratoren  -->
+
+
+<!--  JS fuer Rezept-Tags  -->
+
+
+	<script type="text/javascript">
+
+				var recipe_fake_name_suffix = "Rezepte";
+
+		var tag_ids = new Array();
+		var tag_names = new Array();
+		var sort_order = '';
+
+		
+			tag_ids[0]   = 23;
+			tag_names[0] = "Backen";
+
+		
+			tag_ids[1]   = 92;
+			tag_names[1] = "Kuchen";
+
+		
+			tag_ids[2]   = 112;
+			tag_names[2] = "Trennkost";
+
+		
+	</script>
+
+
+<!--  JS zum Ein- und Ausblenden von Elementen  -->
+
+<script type="text/javascript">
+	function toggle(target){
+		obj = document.getElementById(target);
+		obj.style.display = ( (obj.style.display=='none') ? '' : 'none');
+
+		if ( target == 'kommentarform' ) {
+			document.addform.kommentar.focus();
+		}
+	}
+</script>
+
+<!--  JS fuer die Rezeptbilder-Slideshow  -->
+
+
+<!--  JS fuer die Zufallsrezept-Erkennung  -->
+
+<script type="text/javascript">
+	// zufallsrezeptdetection
+	var qs = location.search.substring(1);
+	var nv = qs.split('&');
+	var url = new Object();
+
+	for(i = 0; i < nv.length; i++) {
+
+		eq = nv[i].indexOf('=');
+		url[nv[i].substring(0,eq).toLowerCase()] = unescape(nv[i].substring(eq + 1));
+	}
+</script>
+	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Breadcrumb Navigation  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="breadcrumb">
+	&raquo; <a href="/">Startseite</a>
+	&raquo; <a href="/rezepte/">Rezepte</a>
+
+	
+		&raquo; <a href="/kochrezept.php">Kategorien</a>
+
+		
+						&raquo; <a href="/rs/s0g47/Suessspeisen-Backen-Rezepte.html" title="Backen &amp; S&uuml;&szlig;speisen Rezepte">Backen &amp; S&uuml;&szlig;speisen</a>
+
+		
+						&raquo; <a href="/rs/s0g48/Kuchen-Rezepte.html" title="Kuchen Rezepte">Kuchen</a>
+
+		
+		
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Superbanner (mittig)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="banner-top">
+	<div id="topbanner"></div></div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Content (Seiteninhalte)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="content">
+
+	<!--  Hinweis bei Direktaufruf aus externer Suche  -->
+
+	<div class="contentbox contentbox-grey" id="keywordMessage" style="overflow: hidden; height: 1px; display: none; text-align: center">
+				<h2>Sie suchen nach:</h2>
+		<h1><span id="keywordMessageText"></span></h1>
+				<input type="button" value="Alle Rezepte hierzu anzeigen" onClick="execute_search_form();">
+	</div>
+
+	<div id="contentbox-1-1" class="contentbox">
+
+		<!--  Zufallsrezept-Hinweis  -->
+
+		<script type="text/javascript">
+			for(i in url) {
+				if(i=='zufall') {
+										document.writeln('<div class="contentbox contentbox-grey" style="text-align: center;">Ein <a href="/rezepte/zufallsrezept/" rel="nofollow"><strong>weiteres Zufallsrezept</strong></a> aufrufen!</div>');
+				}
+			}
+		</script>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  Rezept-Com-User-Banner  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<span id="recipe_com_user_banner">
+
+			
+		</span>
+
+		<!-- linke Spalte -->
+		<div class="contentbox-left">
+
+			<!-- ~~~~~~~~~ -->
+			<!--  Meldung  -->
+			<!-- ~~~~~~~~~ -->
+
+						
+			<!-- ~~~~~~~~~~~~~~~~~~~~~ -->
+			<!--  Rezept-Ueberschrift  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<h1 class="big" style="margin-bottom: 0px;">Apfel - Rosinen - Muffins</h1>
+
+			
+				<span style="font-size: 11px; color:#707070; font-weight: bold;">Trennkost-Backrezept</span>
+
+			
+			<hr class="silver">
+
+			<!-- ~~~~~~~~~~~~~~~~ -->
+			<!--  Google Textads  -->
+			<!-- ~~~~~~~~~~~~~~~~ -->
+
+			<div id="text-ads-oben">
+				
+					<script language="JavaScript">
+					<!--
+					var google_adnum = 0; /* only insert this line for your first ad unit */ 
+					google_ad_client = "pub-5214522864208164";
+					google_ad_channel = "0201401219";
+					google_ad_output = "js";
+					google_max_num_ads = "1";
+					google_ad_type = "text";
+					google_feedback = "on";
+					google_skip = google_adnum; /* insert this snippet for each ad call */
+					
+					/*document.writeln ("google_adnum:" + google_adnum);*/
+					// -->
+					</script>
+		
+					<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+					
+					<hr class="silver">
+					</div>
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!--  Vergebene Schlagwoerter / Tags  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<div id="tags" style="margin: 10px 0px 10px 0px;">
+
+				
+										<span style="float: left; margin-right: 10px;font-weight:bold;">Tags / Schlagworte:</span>
+
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+
+								
+									<div class="nobr" style="float: left;">
+
+																				<input type="checkbox" name="tag_array_index" value="0" /><a href="/rs/s0t23/Backen-Rezepte.html" title="Backen Rezepte">Backen</a>, 									</div>
+
+								
+									<div class="nobr" style="float: left;">
+
+																				<input type="checkbox" name="tag_array_index" value="1" /><a href="/rs/s0t92/Kuchen-Rezepte.html" title="Kuchen Rezepte">Kuchen</a>, 									</div>
+
+								
+									<div class="nobr" style="float: left;">
+
+																				<input type="checkbox" name="tag_array_index" value="2" /><a href="/rs/s0t112/Trennkost-Rezepte.html" title="Trennkost Rezepte">Trennkost</a>									</div>
+
+								
+							</td>
+							<td style="vertical-align:top;">
+
+								
+																		<input type="image" src="http://cdn-dus.chefkoch.de/img/rezept-tags/rezept-kombisuche.gif" onClick="start_tag_search( tag_ids, tag_names, sort_order, recipe_fake_name_suffix )" style="margin-left:10px;margin-top:3px;" title="Rezepte mit ausgewählten Schlagwörtern suchen ...">
+
+																
+							</td>
+						</tr>
+					</table>
+
+				
+			</div>
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Admin Edit- und Status-Links -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			
+			<div class="clear"></div>
+
+			<div id="rezept-bild-buttons">
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+				<!-- Rezeptbild-Slideshow -->
+				<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+
+				<div id="slideshow" style="float: left; width: 360px;">
+
+					
+						<a id="ss_img_link" href="/rezepte/bildupload/1523031257509702/Apfel-Rosinen-Muffins.html"><img src="http://cdn-dus.chefkoch.de/img/rezept-bildupload-keinbild.gif" style="width: 360px; height: 240px;"></a>
+
+					
+				</div><!-- /slideshow -->
+
+				<div id="rezept-buttons" style="position: relative; float: left; width: 176px;">
+
+					<!-- ~~~~~~~~~~~~~ -->
+					<!-- Rezept-Voting -->
+					<!-- ~~~~~~~~~~~~~ -->
+
+					<!-- Bewertung -->
+					<div id="rezept-score">
+
+												<a href="javascript:toggle('rezept-voting')"><img id="rezept-score-img" src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/score-unbewertet.gif" alt="Bewertung abgeben" title="Bewertung abgeben" border="0"></a>
+
+						<div id="rezept-score-info">
+
+							
+							<br>
+
+						</div>
+
+						<div style="margin: 10px 0px 5px 0px;">
+														&raquo; <a href="javascript:toggle('rezept-voting')">Rezept bewerten</a> &laquo;
+						</div>
+
+					</div><!-- /rezept-score -->
+
+					<!-- Rezept-Voting abgeben -->
+					<div id="rezept-voting" style="position: absolute; top: 85px; left: 0px; display: none; z-index: 1000; width: 176px; background: #E5E5E5; text-align: center;">
+
+						<table cellspacing="0" cellpadding="0" style="margin: 10px 10px 47px 10px;">
+							<tr>
+																<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=5" onClick="return confirm('Ist das Rezept wirklich sooo gut? Feinere Differenzierungen ergeben ein besseres Ergebnis!\n\nKlicken Sie auf &raquo;OK&laquo; um dennoch abzustimmen. &raquo;Abbrechen&laquo; um eine andere Bewertung abzugeben.')" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-5.gif" alt="" border="0" width="60" height="9"></a></td>
+								<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=5" onClick="return confirm('Ist das Rezept wirklich sooo gut? Feinere Differenzierungen ergeben ein besseres Ergebnis!\n\nKlicken Sie auf &raquo;OK&laquo; um dennoch abzustimmen. &raquo;Abbrechen&laquo; um eine andere Bewertung abzugeben.')" rel="nofollow">Perfekt!</a></span></td>
+							</tr>
+							<tr>
+								<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=4" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-4.gif" alt="" border="0" width="60" height="9"></a></td>
+																<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=4" rel="nofollow">Sehr Gut!</a></span></td>
+							</tr>
+							<tr>
+								<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=3" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-3.gif" alt="" border="0" width="60" height="9"></a></td>
+																<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=3" rel="nofollow">Ganz gut</a></span></td>
+							</tr>
+							<tr>
+								<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=2" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-2.gif" alt="" border="0" width="60" height="9"></a></td>
+																<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=2" rel="nofollow">Ausbaufähig</a></span></td>
+							</tr>
+							<tr>
+								<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=1" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-1.gif" alt="" border="0" width="60" height="9"></a></td>
+																<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=1" rel="nofollow">Mangelhaft</a></span></td>
+							</tr>
+							<tr>
+																<td><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=0" onClick="return confirm('Ist das Rezept wirklich sooo schlecht? Feinere Differenzierungen ergeben ein besseres Ergebnis!\n\nKlicken Sie auf &raquo;OK&laquo; um dennoch abzustimmen. &raquo;Abbrechen&laquo; um eine andere Bewertung abzugeben.')" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/rezept-anzeige/vote-0.gif" alt="" border="0" width="60" height="9"></a></td>
+								<td style="padding-left: 5px;"><span class="s"><a href="/rezepte/1523031257509702/Apfel-Rosinen-Muffins.html?vote=0" onClick="return confirm('Ist das Rezept wirklich sooo schlecht? Feinere Differenzierungen ergeben ein besseres Ergebnis!\n\nKlicken Sie auf &raquo;OK&laquo; um dennoch abzustimmen. &raquo;Abbrechen&laquo; um eine andere Bewertung abzugeben.')" rel="nofollow">Unzumutbar!</a></span></td>
+							</tr>
+						</table>
+
+					</div><!-- /rezept-voting -->
+
+					<!-- ~~~~~~~~~~~~~~~ -->
+					<!-- Rezept-Aktionen -->
+					<!-- ~~~~~~~~~~~~~~~ -->
+
+					<div id="rezept-actions">
+
+												<a class="rezept-button" href="/rezepte/drucken/1523031257509702/2309481a/12/Apfel-Rosinen-Muffins.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button/Rezept-Drucken.gif" alt="Drucken"></a>
+												<a class="rezept-button" href="/rezepte/speichern/1/1523031257509702/Apfel-Rosinen-Muffins.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img//button/Rezept-Speichern.gif" alt="Speichern"></a>
+												<a class="rezept-button" href="/rezepte/speichern/2/1523031257509702/Apfel-Rosinen-Muffins.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button/Rezept-Speichern-Unter.gif" alt="Speichern Unter"></a>
+												<a class="rezept-button" href="/rezepte/empfehlen/1523031257509702/Apfel-Rosinen-Muffins.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button/Rezept-Empfehlen.gif" alt="Empfehlen"></a>
+												<a class="rezept-button" href="/rezepte/bildupload/1523031257509702/Apfel-Rosinen-Muffins.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button/Rezept-Fotos.gif" alt="Fotos hochladen"></a>
+
+					</div><!-- /rezept-actions -->
+
+				</div><!-- /rezept-buttons -->
+
+				<div class="clear"></div>
+
+			</div><!-- /rezept-bild-buttons -->
+
+			<!-- ~~~~~~~ -->
+			<!-- Zutaten -->
+			<!-- ~~~~~~~ -->
+
+			<div id="rezept-zutaten">
+
+				<form name="zutatenform" action="/rezept-anzeige.php?ID=1523031257509702" method="post">
+										<h2 class="line"><strong>Zutaten für </strong><input type="text" name="divisor" size="2" value="12" style="height:19px;width:25px;font:bold 12px Verdana,Arial,Helvetica;"><strong> Portionen</strong> <input type="image" src="http://cdn-dus.chefkoch.de/img/button/rezept-umrechnen.gif" border="0" align="absmiddle"></h2>
+				</form>
+
+				<table class="zutaten">
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								250&nbsp;g							</td>
+							<td>
+
+							
+							
+								Dinkelmehl, fein
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								1&nbsp;Pck.							</td>
+							<td>
+
+							
+							
+								Weinsteinbackpulver 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								60&nbsp;g							</td>
+							<td>
+
+							
+							
+								Rohrzucker 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								2&nbsp;Prisen							</td>
+							<td>
+
+							
+								<a href="/rezept-zutateninfo-com.php?ID=6" target="_self">
+
+							
+							
+								Salz 
+							
+							
+								</a>
+
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								100&nbsp;g							</td>
+							<td>
+
+							
+							
+								Rosinen 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								140&nbsp;g							</td>
+							<td>
+
+							
+							
+								Butter, geschmolzen
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								2&nbsp;							</td>
+							<td>
+
+							
+							
+								Eigelb 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								3&nbsp;EL							</td>
+							<td>
+
+							
+							
+								Sahne 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								400&nbsp;g							</td>
+							<td>
+
+							
+							
+								Apfelkompott, ungesüsst
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								60&nbsp;ml							</td>
+							<td>
+
+							
+								<a href="/rezept-zutateninfo-com.php?ID=247" target="_self">
+
+							
+							
+								Wasser 
+							
+							
+								</a>
+
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								15&nbsp;ml							</td>
+							<td>
+
+							
+							
+								Sahne 
+							
+							
+							</td>
+						</tr>
+
+					
+						<tr>
+							<td align="right" class="nobr">
+								&nbsp;							</td>
+							<td>
+
+							
+							
+								Fett, für's Blech
+							
+							
+							</td>
+						</tr>
+
+					
+				</table>
+
+			</div><!-- /rezept-zutaten -->
+			<br>
+
+			<!-- ~~~~~~~~~~~ -->
+			<!-- Zubereitung -->
+			<!-- ~~~~~~~~~~~ -->
+
+						<h2 class="line">Zubereitung</h2>
+			<div id="rezept-zubereitung" style="margin-top: 10px;">
+				Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen und ein Muffinblech einfetten.<br />
+ <br />
+Die festen Zutaten (von Dinkelmehl bis Rosinen) miteinander mischen.<br />
+Die flüssigen Zutaten (von Butter bis 15 ml Sahne) cremig aufschlagen und die Mehlmischung schnell und gut unterrühren. <br />
+<br />
+In Muffinförmchen füllen und 20 bis 25 Minuten backen (Stäbchenprobe).<br />
+<br />
+Tipp: Das Apfelkompott macht man am besten selbst aus süßen/mürben Äpfeln (Rezept dazu siehe: http://www.chefkoch.de/rezepte/1367081241530983/Apfelkompott-Apfelmus.html)			</div>
+
+			<!-- ~~~~~~~~~~~~ -->
+			<!-- Rezept-Infos -->
+			<!-- ~~~~~~~~~~~~ -->
+			
+			<table id="rezept-infos" cellpadding="0" cellspacing="0" style="margin-top: 10px; width: 100%;">
+				<tr>
+					<td valign="top" style="padding-right:10px;">
+
+						<table cellspacing="0" cellpadding="0">
+
+							<!-- Zubereitungszeit -->
+							<tr>
+																<td><span class="n"><strong>Zubereitungszeit:</strong></span></td>
+																<td style="padding-left:10px;" class="nobr"><span class="n">ca. 10 Min.</span></td>
+							</tr>
+
+							<!-- Ruhezeit -->
+							
+							<!-- Schwierigkeitsgrad -->
+							<tr>
+																<td><span class="n"><strong>Schwierigkeitsgrad:</strong></span></td>
+								<td style="padding-left:10px;" class="nobr"><span class="n">normal</span></td>
+							</tr>
+
+							<!-- Brennwert -->
+							<tr>
+																<td><span class="n"><strong>Brennwert p. P.:</strong></span></td>
+								<td style="padding-left:10px;" class="nobr">
+									<span class="n">
+
+										
+																						keine Angabe
+										
+									</span>
+								</td>
+							</tr>
+							<tr>
+																<td><span class="n"><strong>Freischaltung:</strong></span></td>
+								<td style="padding-left:10px;" class="nobr"><span class="n">06.11.09</span></td>
+							</tr>
+
+							<!-- ~~~~~~~~~~~~~~~~ -->
+							<!-- Rezept-Statistik -->
+							<!-- ~~~~~~~~~~~~~~~~ -->
+							
+							<tr>
+																<td valign="top"><span class="n"><strong>Rezept-Statistiken:</strong></span></td>
+								<td style="padding-left:10px;">
+									<span class="n">
+																				1.369 (82)* gelesen<br />
+																				8 (1)* gespeichert<br />
+																				57 (2)* gedruckt<br />
+																				1 (0)* verschickt<br />
+																				* nur in diesem Monat									</span>
+								</td>
+							</tr>
+						</table>
+
+					</td>
+
+					<!-- ~~~~~~~~~~~~~~~~ -->
+					<!-- Rezept-Verfasser -->
+					<!-- ~~~~~~~~~~~~~~~~ -->
+					
+					<td valign="top" class="dashed-border" width="180">
+						<span class="s">
+														<strong>Verfasser:</strong><br>
+								<a href="/user/profil/e6d2a7540049e13cd3e7035df326cf3c/CocaColaMaus.html"><img src="http://cdn-dus.chefkoch.de/img/buddy-65.jpg" border="0" alt=""></a><br>
+	
+<a href="/user/profil/e6d2a7540049e13cd3e7035df326cf3c/CocaColaMaus.html">CocaColaMaus</a>&nbsp;<a href="/register/club.php" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/userlevel-clubuser.gif" border="0" title="Chefkoch-Clubuser"></a>&nbsp;<a href="/userrank.php" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/userlevel-8.gif" border="0" alt="Chefkoch" title="Chefkoch"></a>
+<br>
+<img src="http://cdn-dus.chefkoch.de/img/aktiv-3.gif" vspace="3" title="Aktivität: 3/11"><br>
+<img src="http://cdn-dus.chefkoch.de/img/leer.gif" alt="" border="0" height="6"><br>
+Mitglied seit 17.01.2002<br>
+<nobr>
+ 2043 Beiträge (&oslash;0,62/Tag)
+</nobr>
+<img src="http://cdn-dus.chefkoch.de/img/leer.gif" alt="" border="0" height="3"><br>
+
+<div align="left">
+ <nobr>
+  <a href="/mychefkoch/messages/my-messages-write.php?type=new&receiver_id=e6d2a7540049e13cd3e7035df326cf3c"><img src="http://cdn-dus.chefkoch.de/img/button-profil-km.gif" vspace="4" title="Kurzmitteilung schreiben" border="0"></a> 
+  <a href="/mychefkoch/freunde/e6d2a7540049e13cd3e7035df326cf3c,1/"><img src="http://cdn-dus.chefkoch.de/img/button-profil-freund.gif" vspace="4" title="auf Freundesliste setzen" border="0"></a>
+ </nobr>
+ <nobr> 
+  <a href="/user/profil/e6d2a7540049e13cd3e7035df326cf3c/CocaColaMaus.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button-profil-profil.gif"  vspace="4" title="Profil ansehen" border="0"></a>
+ </nobr>
+ 
+	<nobr>
+	 <a href="/user/profil/e6d2a7540049e13cd3e7035df326cf3c/CocaColaMaus.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button-profil-fotos.gif" vspace="4" title="42 Bilder veröffentlicht" border="0"></a>
+	</nobr>
+	
+	<nobr>
+	 <a href="/user/profil/e6d2a7540049e13cd3e7035df326cf3c/CocaColaMaus.html" rel="nofollow"><img src="http://cdn-dus.chefkoch.de/img/button-profil-rezepte.gif" vspace="4" alt="User hat eigene Rezeptsammlungen veröffentlicht" title="User hat eigene Rezeptsammlungen veröffentlicht" border="0"></a>
+	</nobr></div>
+<br>
+						</span>
+					</td>
+				</tr>
+			</table>
+
+			<!-- ~~~~~~~~~~~~~~~~ -->
+			<!--  Google Textads  -->
+			<!-- ~~~~~~~~~~~~~~~~ -->
+
+			<div id="text-ads-mitte">
+				
+					<hr class="silver">
+					
+					<script language="JavaScript">
+					<!--
+					google_ad_client = "pub-5214522864208164";
+					google_ad_channel = "1338010525";
+					google_ad_output = "js";
+					google_max_num_ads = "1";
+					google_ad_type = "text";
+					google_feedback = "on";
+					google_skip = google_adnum; /* insert this snippet for each ad call */
+					
+					/*document.writeln ("google_adnum:" + google_adnum);*/
+					// -->
+					</script>
+		
+					<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+					</div>
+
+			<!-- ~~~~~~~~~~~~~~~~ -->
+			<!-- Rezeptkommentare -->
+			<!-- ~~~~~~~~~~~~~~~~ -->
+			
+			<div id="rezept-kommentare" style="margin-top: 20px;">
+
+								<h2 class="line" style="margin-bottom: 15px;">Kommentare anderer Nutzer</h2>
+
+				
+										Dieses Rezept wurde noch nicht kommentiert.<br>
+
+				
+			</div>
+
+			<a name="bottom"></a>
+			<br>
+			<div class="infobox" align="center" style="padding:10px;">
+								<a href="javascript:toggle('kommentarform')"><strong>&raquo; Komplett neue Frage / Kommentar schreiben &laquo;</strong></a>
+			</div>
+			<br>
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Rezeptkommentar verfassen -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			
+				<div id="kommentarform" style="display:none">
+					<div class="errorbox" style="padding:10px;margin-top:10px;">
+						<img src="http://cdn-dus.chefkoch.de/img/button-info.gif" border="0" alt="" width="15" height="15" style="margin-right:10px;" align="left">
+												<span class="s">
+							<b>Eigenen Kommentar abgeben</b><br>
+							<br>
+														Um selbst Kommentare zu Rezepten abgeben zu können, müssen Sie sich bei Chefkoch.de <a href="/register/"><strong>registrieren</strong></a>. Wenn Sie schon registriert sind, so müssen Sie sich mit Ihrem Benutzernamen und Passwort am System anmelden.						</span>
+					</div>
+					<br clear="both"><br>
+				</div>
+
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Rezeptkommentar beantworten -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			
+				<div id="kommentar_antwort" style="display:none">
+					<div id="overlayBoxClose" class="overlayBoxClose">
+												<a href="javascript:rezeptKommentarReplyClose();">schließen</a>
+												<a href="javascript:rezeptKommentarReplyClose();"><img src="http://cdn-dus.chefkoch.de/img/overlay_close.gif" alt="schließen" title="schließen"></a>
+					</div>
+					<div class="errorbox" style="padding:10px;margin-top:25px;">
+					<img src="http://cdn-dus.chefkoch.de/img/button-info.gif" border="0" alt="" width="15" height="15" style="margin-right:10px;" align="left">
+										<span class="s"><b>Eigene Antworten abgeben</b></span>
+										<p><span class="s">Um selbst Antworten zu Kommentaren abgeben zu können, müssen Sie sich bei Chefkoch.de <a href="/register/"><strong>registrieren</strong></a>. Wenn Sie schon registriert sind, so müssen Sie sich mit Ihrem Benutzernamen und Passwort am System anmelden.</span></p>
+					</div>
+					<div id="kommentar_antwort_close" style="display:none;"></div>
+					<div id="kommentar_antwort_pid" style="display:none;"></div>
+					<br clear="both"><br>
+				</div>
+
+			
+		</div><!-- /linke Spalte -->
+
+		<!-- rechte Spalte -->
+		<!-- ~~~~~~~~~~~~~ -->
+		<!-- S I D E B A R -->
+		<!-- ~~~~~~~~~~~~~ -->
+
+		<div class="contentbox-right">
+
+			<div class="right-box-spacer-top clear" style="height: 6px;">&nbsp;</div>
+
+			<!-- ~~~~~~~ -->
+			<!-- Magazin -->
+			<!-- ~~~~~~~ -->
+
+			
+								<h2 class="box">Passende Magazinartikel</h2>
+
+				<div class="right-box-scroll-v">
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/3855/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/1x1Backen_100_100-2.gif" title="Quiche Lorraine, Schoko-Kirsch-Kuchen und Tomatenbrot mediterran" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/3855/">AEG: 1x1 in Punkto Backen</a></div>
+							<div class="txt">Quiche Lorraine, Schoko-Kirsch-Kuchen und Tomatenbrot mediterran</div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/4609/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/52video.jpg" title="Frischk&auml;setorte mit Blaubeeren " border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/4609/">Video: Tortenzubereitung ohne backen!</a></div>
+							<div class="txt">Frischkäsetorte mit Blaubeeren </div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/3919/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/56x56_waffel-1.jpg" title="Die leckersten Waffelkreationen!" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/3919/">Waffelrezepte</a></div>
+							<div class="txt">Die leckersten Waffelkreationen!</div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/2674/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/56x56_kuchen-1.jpg" title="einige Tipps und Tricks + Rezepte" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/2674/">Kuchen backen</a></div>
+							<div class="txt">einige Tipps und Tricks + Rezepte</div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/2225/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/ckback.gif" title="f&uuml;r richtig leckere Obstkuchen" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/2225/">Backen mit Sommerfr&uuml;chten</a></div>
+							<div class="txt">für richtig leckere Obstkuchen</div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/1727/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/56-3.gif" title="Ratschl&auml;ge zur gesunden Ern&auml;hrung" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/1727/">So bleiben Sie gesund!</a></div>
+							<div class="txt">Ratschläge zur gesunden Ernährung</div>
+						</div>
+						<span clear="all"></span>
+
+					
+						<div class="magazin_teaser">
+							<div class="img"><a href="http://www.chefkoch.de/magazin/rt/1638/"><img src="http://cdn-dus.chefkoch.de/ck.de/cms/56x56_stollen-1.gif" title="Advent oder Weihnachten ohne? Undenkbar!" border="0" width="56" height="56"></a></div>
+							<div class="ue"><a href="http://www.chefkoch.de/magazin/rt/1638/">Zeit f&uuml;r Stollen</a></div>
+							<div class="txt">Advent oder Weihnachten ohne? Undenkbar!</div>
+						</div>
+						<span clear="all"></span>
+
+					
+				</div>
+
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+			<!--  WERBUNG (HPA / MR)  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+			
+			<span id="banner-hpa-mr">
+				<div id="hpamrbanner"></div>			</span>
+
+			<!-- ~~~~~~~~~~~~~~~~~ -->
+			<!-- Aehnliche Rezepte -->
+			<!-- ~~~~~~~~~~~~~~~~~ -->
+
+			
+								<h2 class="box">Ähnliche Rezepte</h2>
+
+				<div class="right-box-grey">
+
+					<ul class="no-margin" style="margin-bottom:20px;">
+
+						
+							<li><a href="/rezepte/1513381256644762/Mandel-Gugelhupf-mit-Mozartkugeln.html">Mandel - Gugelhupf mit Mozartkugeln</a></li>
+
+						
+							<li><a href="/rezepte/1031511208339383/Chrissis-Schneewittchen-Kuchen.html">Chrissis Schneewittchen - Kuchen</a></li>
+
+						
+							<li><a href="/rezepte/1053831210397996/Chrissis-Rhabarber-Griess-Kuchen.html">Chrissis Rhabarber - Grieß - Kuchen</a></li>
+
+						
+							<li><a href="/rezepte/1363281241118575/Schnelle-vegane-Apfel-oder-Heidelbeermuffins.html">Schnelle vegane Apfel- oder Heidelbeermuffins</a></li>
+
+						
+							<li><a href="/rezepte/1372901242132769/Quarktorte-mit-Rosinen.html">Quarktorte mit Rosinen</a></li>
+
+						
+							<li><a href="/rezepte/1395101244452627/Dinkelcantuccini.html">Dinkelcantuccini</a></li>
+
+						
+							<li><a href="/rezepte/1509421256290935/Marzipan-Gugelhupf-a-la-Maeusle.html">Marzipan - Gugelhupf a la Mäusle</a></li>
+
+						
+							<li><a href="/rezepte/1522281257436777/Mandel-Nutella-Muffins.html">Mandel - Nutella - Muffins</a></li>
+
+						
+							<li><a href="/rezepte/1523161257515616/Kartoffellebkuchen.html">Kartoffellebkuchen</a></li>
+
+						
+							<li><a href="/rezepte/1539881260194085/Muskatzinen.html">Muskatzinen</a></li>
+
+												
+					</ul>
+
+				</div>
+
+			
+			<!-- ~~~~~~~~~~~~~~~~ -->
+			<!-- Rezeptsammlungen -->
+			<!-- ~~~~~~~~~~~~~~~~ -->
+
+			
+								<h2 class="box" style="margin-top: 10px;">Rezeptsammlungen</h2>
+
+				<div class="right-box-grey">
+										<p style="margin-top: 0px;">Dieses Rezept ist in diesen Sammlungen gespeichert:</p>
+
+					<ul class="no-margin">
+
+						
+							<li type="square"><a href="/rezeptsammlung/1464797/Kuchen-mit-Eigelb.html">Kuchen mit Eigelb</a></li>
+
+												
+					</ul>
+					<br>
+
+					<!-- Link: Mehr Rezeptsammlungen -->
+
+										
+				</div>
+
+			
+		</div><!-- /rechte Spalte -->
+
+		<div class="clear"></div>
+
+	</div><!-- /contentbox-1-1 -->
+
+</div><!-- /Content (Seiteninhalte) -->
+
+<!-- ~~~~~~~~~~~~~~~~ -->
+<!--  Google Textads  -->
+<!-- ~~~~~~~~~~~~~~~~ -->
+
+<span id="text-ads">
+	
+					<div style="padding: 10px;">
+			
+						<script language="JavaScript">
+						<!--
+						google_ad_client = "pub-5214522864208164";
+						google_ad_channel = "0855877585";
+						google_ad_output = "js";
+						google_max_num_ads = "2";
+						google_ad_type = "text";
+						google_feedback = "on";
+						google_skip = google_adnum; /* insert this snippet for each ad call */
+			
+						/*document.writeln ("google_adnum:" + google_adnum);*/
+						// -->
+						</script>
+						
+						<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+					
+					</div>
+		</span>
+
+<!-- ~~~~~~~~~~~~~~ -->
+<!--  Partnerlogos  -->
+<!-- ~~~~~~~~~~~~~~ -->
+
+<div id="partnerlogos">
+	<div style="margin:5px 0px;text-align:center;">
+	<span class="s">Weitere interessante Informationen auf den Chefkoch.de Partnerseiten:</span>
+	<table border="0" cellspacing="0" cellpadding="3" width="100%">
+		<tr>
+			<td align="center" valign="middle" width="50%"><a href="/magazin/rs/14,0,0/partnerlogo/"><img src="http://img.chefkoch.de/ck.de/comrezept-img/aeg-electrolux/aeg-electrolux.gif" title="AEG Electrolux - Perfekt in Form und Funktion" border="0"></a></td>
+			<td align="center" valign="middle" width="50%"><a href="/magazin/rs/40,0,0/partnerlogo/"><img src="http://cdn-dus.chefkoch.de/img/partnerlogos/wmf.gif" title="WMF" border="0"></a></td>
+			</tr>
+	</table>
+</div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Footer (Partnerseiten, Live-Suchen, etc.)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<div id="footer">
+				<div id="footer-top">
+	<div id="ck_statistik">
+	<nobr>38.799 User online</nobr>, 
+	<nobr>908 <a href="/useronline.php">angemeldet</a>, </nobr>
+	<nobr>178.105 Rezepte, </nobr>
+	<nobr>553.039 Themen, </nobr>
+	<nobr>9.766.038 Beiträge</nobr>
+</div>
+
+	<div>
+		<strong>Chefkoch.de - Europas größte Kochseite, &copy; 1998-2010 pixelhouse GmbH</strong><br>
+		<a href="/uebersicht.php">&Uuml;bersicht</a> | <a href="/impressum.php" rel="nofollow">Impressum</a> | <a href="/privacy.php" rel="nofollow">Datenschutz</a> | <a href="/werbung.php" rel="nofollow">Werben auf chefkoch.de (Mediadaten)</a> | <a href="/magazin/artikel/1426,0/Chefkoch/Jobs.html">Jobs</a><br>
+		<A HREF="/startseite.php" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.chefkoch.de');">Seite als Ihre Internetstartseite</A> | <a href="mailto:?subject=Interessante Kochseite&body=Hi! Schau Dir mal diese Kochseite an. 145.921 Rezepte, 8 Mio Forenbeiträge uvm. http://www.chefkoch.de">an Freunde empfehlen</a> | <a href="#" onclick="window.external.AddFavorite('http://www.chefkoch.de','Chefkoch.de - Europas größte Kochseite');">zu Favoriten hinzufügen</a>
+	</div>
+</div>
+<div id="footer-bottom"">
+	<span class="live-search">
+Live Rezeptsuchen: <a href="/rs/s0/cocos/Rezepte.html"  title="cocos">cocos rezepte</a>, <a href="/rs/s0/donauwelle/Rezepte.html"  title="donauwelle">donauwelle rezepte</a>, <a href="/rs/s0/dressing/Rezepte.html"  title="dressing">dressing rezepte</a>, <a href="/rs/s0/einfaches+zum+abendbrot/Rezepte.html"  title="einfaches zum abendbrot">einfaches zum abendbrot rezepte</a>, <a href="/rs/s0/fettarm+reis/Rezepte.html"  title="fettarm reis">fettarm reis rezepte</a>, <a href="/rs/s0/fischst%E4bchen/Rezepte.html"  title="fischstäbchen">fischstäbchen rezepte</a>, <a href="/rs/s0/hippe/Rezepte.html"  title="hippe">hippe rezepte</a>, <a href="/rs/s0/joghurt+suppe/Rezepte.html"  title="joghurt suppe">joghurt suppe rezepte</a>, <a href="/rs/s0/kasselerbraten/Rezepte.html"  title="kasselerbraten">kasselerbraten rezepte</a>, <a href="/rs/s0/m+86/Rezepte.html"  title="m 86">m 86 rezepte</a>	</span>
+	<img src="/counter4.php?a=1&user=&page=/rezept-anzeige.php&img_time=1296225278&cache=cached" alt="">
+	<img src="/counter5.php?a=2&img_time=1296225278&ref=" alt="">
+
+	<div id="gjfooter" style="margin-top:20px;">
+	<a  target="_blank" href="http://www.geo.de/">Reisen</a> auf GEO, <a  target="_blank" href="http://www.dogs-magazin.de/">Hunde</a> auf DOGS MAGAZIN, <a  target="_blank" href="http://www.wiewohnstdu.de/">Wohnen</a> auf WieWohnstDu.de, <a  target="_blank" href="http://www.sz-online.de/">Infos</a> auf Sächsische Zeitung, <a  target="_blank" href="http://www.neueszuhause.de/">Einrichten</a> auf neueszuhause.de, <a  target="_blank" href="http://www.kino.de/">Filme</a> auf kino.de, <a  target="_blank" href="http://www.myhealthyday.de/">Gesundheit</a> auf healthyliving.de, <a  target="_blank" href="http://www.gala.de/">Stars</a> auf Gala, <a href="/bag-partner.php">Partnerseiten</a>
+	</div>
+</div>			</div>
+			
+		</div><!-- /wrapper -->
+		
+		<!-- Content-Box die (mit abgedunkeltem Hintergrund) uber allem eingeblendet wird -->
+		<div id="overlayBox" class="overlayBox"></div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  Temporaere Container fuer Werbung  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<span id="banner-top-tmp">
+			
+																						<script type="text/javascript">
+																							var nuggrid=encodeURIComponent(top.location.href) || 0;
+																							var n_pbt='';
+																							document.write('<scr'+'ipt type="text/javascript" src="http://emsguj.nuggad.net/rc?nuggn=1886380617&nuggsid=953893804&nuggrid=' + nuggrid + '"><\/scr'+'ipt>');  
+																							var setnugg="1";
+																						</script>
+																						<div id="tmp_topbanner" style="display:none;">
+																								<script language="JavaScript" type="text/javascript">
+																									if ( document.getElementById("topbanner") ) {
+																										if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																										document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-rubriken/rezepte;pg=rezepte;!category=stop;sz=468x60;tile=1;kw=Dinkelmehl;kw=Weinsteinbackpulver;kw=Rohrzucker;kw=Salz;kw=Rosinen;kw=Butter;kw=Eigelb;kw=Sahne;kw=Apfelkompott;kw=Wasser;kw=Sahne;kw=Fett;kw=Backen;kw=Kuchen;kw=Trennkost;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																									}
+																								</script>
+																								<script language="JavaScript" type="text/javascript">
+																									var LeaderBoard;
+																									var wallpaper;
+																									
+																									if ( wallpaper == 1 ) {
+																										var wallpaperDiv = document.getElementById("banner-wallpaper");
+																										ad_banner_show( "tmp_topbanner", "wallpaperbanner" );
+																									} else if ( LeaderBoard == 1 ) {
+																										var topBannerDiv = document.getElementById("topbanner");
+																										topBannerDiv.style.paddingTop = "10px";
+																										ad_banner_show( "tmp_topbanner", "topbanner" );
+																									}
+																								</script>
+																						</div>		</span>
+		<span id="banner-sky">
+			
+																						<div id="SkyScraper">
+																							<div>
+																								<script language="JavaScript" type="text/javascript">
+																									if((typeof wallpaper == "undefined") || (wallpaper == 0)) {
+																										if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																										if(screen.width >= 1000) {sol = "yes";} else {sol = "no";}
+																										document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-scroll_sky/rezepte;pg=rezepte;!category=stop;res='+sol+';sz=1x1;dcopt=ist;tile=2;kw=Dinkelmehl;kw=Weinsteinbackpulver;kw=Rohrzucker;kw=Salz;kw=Rosinen;kw=Butter;kw=Eigelb;kw=Sahne;kw=Apfelkompott;kw=Wasser;kw=Sahne;kw=Fett;kw=Backen;kw=Kuchen;kw=Trennkost;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																									}
+																								</script>
+																							</div>
+																						</div>		</span>
+		<span id="banner-hpa-mr-temp">
+			
+																							<div id="tmp_hpamrbanner" style="display:none;">
+																									<script language="JavaScript" type="text/javascript">
+																											if ( document.getElementById("hpamrbanner") ) {
+																												if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																												document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-halfpage/rezepte;pg=rezepte;!category=stop;sz=1x1;tile=3;kw=Dinkelmehl;kw=Weinsteinbackpulver;kw=Rohrzucker;kw=Salz;kw=Rosinen;kw=Butter;kw=Eigelb;kw=Sahne;kw=Apfelkompott;kw=Wasser;kw=Sahne;kw=Fett;kw=Backen;kw=Kuchen;kw=Trennkost;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																											}
+																											var halfpage;
+																										</script>
+																										<script language="JavaScript" type="text/javascript">
+																											if ( document.getElementById("hpamrbanner") && ( (typeof halfpage == "undefined") || (halfpage == 0) ) ) {
+																												document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-contentad/rezepte;pg=rezepte;!category=stop;sz=1x1;tile=3;kw=Dinkelmehl;kw=Weinsteinbackpulver;kw=Rohrzucker;kw=Salz;kw=Rosinen;kw=Butter;kw=Eigelb;kw=Sahne;kw=Apfelkompott;kw=Wasser;kw=Sahne;kw=Fett;kw=Backen;kw=Kuchen;kw=Trennkost;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																											}
+																											var contentad;
+																										</script>
+																										<script language="JavaScript" type="text/javascript">
+																											if ( (halfpage == 1) || (contentad == 1) ) {
+																												var hpamrbannerDiv = document.getElementById("hpamrbanner");
+																												hpamrbannerDiv.style.marginBottom = "20px";
+																												ad_banner_show( "tmp_hpamrbanner", "hpamrbanner" );
+																											}
+																									</script>
+																							</div>		</span>
+		<span id="content-banner-tmp">
+			
+																							<div id="tmp_contentbanner" style="display:none;">
+																							</div>		</span>
+		
+		<!-- ~~~~~~~~~~~~~ -->
+		<!--  Statistiken  -->
+		<!-- ~~~~~~~~~~~~~ -->
+		
+				
+				
+		<!-- SZM VERSION="1.5" -->
+		<!-- Dieses Online-Angebot unterliegt nicht der IVW-Kontrolle! -->
+		<script type="text/javascript">
+		<!--
+		var IVW="http://chefkoch.ivwbox.de/cgi-bin/ivw/CP/1E06HCMA;";
+		document.write("<img src=\""+IVW+"?r="+escape(document.referrer)+"&d="+(Math.random()*100000)+"\" width=\"1\" height=\"1\" alt=\"szmtag\" />");
+		//-->
+		</script>
+		<noscript>
+		<img src="http://chefkoch.ivwbox.de/cgi-bin/ivw/CP/1E06HCMA;"
+		width="1" height="1" alt="szmtag" />
+		
+		</noscript>
+		<!-- /SZM -->
+		<!-- SZMFRABO VERSION="1.1" -->
+		<script language="JavaScript" type="text/javascript"> 
+		var szmvars="chefkoch//CP//1E06HCMA";
+		</script>
+		<script src="http://chefkoch.ivwbox.de/2004/01/survey.js" language="JavaScript" type="text/javascript">
+		</script>
+		<!-- /SZMFRABO -->
+		
+		<img src="http://www.chefkoch.de/magazin/pixel/t[0]=0&i[0]=3855&a[0]=0&s[0]=&i[1]=4609&i[2]=3919&i[3]=2674&i[4]=2225&i[5]=1727&i[6]=1638&z=490346139" alt="" />		
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-262191-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+		</script>
+		
+	</body>
+</html>
+<span class="s runtime_ck" style="color:gray">(runtime: 0.007785 sec on cook4.chefkoch.de)</span>

@@ -1,0 +1,519 @@
+URL:http://www.chefkoch.de/rezepte/empfehlen/391451126680345/Spaghetti-Carbonara.html
+DATE:Jan 30, 2011 6:10:23 AM
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		
+		<title>Chefkoch.de: Rezept "Spaghetti Carbonara" empfehlen ...</title>
+		
+		<meta http-equiv="content-language" content="de">
+		<meta name="description" content="Rezepte mit Bildern (bereits über 131.018), über 700.000 Hobbyköche - Europas beliebteste Kochseite">
+		<meta name="keywords" content="Rezepte, Kochrezepte">
+		<meta name="robots" content="INDEX,FOLLOW">
+		<meta name="revisit-after" content="31 days">
+		
+				
+					<link rel="alternate" type="application/rss+xml" title="Chefkoch.de: Rezept des Tages (RSS 2.0)" href="http://www.chefkoch.de/rss/rezept-des-tages.php">
+				
+		<link rel="SHORTCUT ICON" href="/favicon.ico">
+
+		
+				
+					<link rel="stylesheet" type="text/css" href="/css/main.css" media="all">
+				
+		<!--[if gt IE 5.0]>
+			<link rel="stylesheet" type="text/css" href="/css/main-ie.css" media="all">
+		<![endif]-->
+		
+										
+					<script type="text/javascript" src="http://img.chefkoch.de/js/milonic_src.js"></script>
+					<script type="text/javascript" src="http://img.chefkoch.de/js/mmenudom.js"></script>
+					<script type="text/javascript" src="http://img.chefkoch.de/js/menu_data.js"></script>
+					<script type="text/javascript" src="http://img.chefkoch.de/js/functions-2008-12-16.js"></script>
+			</head>
+	
+	<body onClick="hideLoginForm(event);">
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  Superbanner (Wallpaper)  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<span id="banner-wallpaper">
+			<div id="wallpaperbanner"></div>		</span>
+		
+		<div id="wrapper">
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!--  Header mit Suche, Navigation, etc.  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			<div id="header">
+				
+				<!--  Chefkoch-Logo //-->
+				<a href="http://www.chefkoch.de"><img id="header_logo" src="http://cdn-dus.chefkoch.de/img/ck-logo.gif" alt="" title="Chefkoch Homepage: über 145.921 Rezepte"></a>
+				
+				<!-- ~~~~~~~~~~~~ -->
+				<!--  Navigation  -->
+				<!-- ~~~~~~~~~~~~ -->
+				
+				<div class="navigation">
+					<ul class="tab_nav">
+						<li><a href="/">Startseite</a></li>
+						<li name="magazinmenu" id="magazinmenu"><a href="/magazin/" onMouseOver="popup('magazin','magazinmenu')" onMouseOut="popdown()">Magazin</a></li>
+						<li class="on" name="rezeptemenu" id="rezeptemenu"><a href="/rezepte/" onMouseOver="popup('rezepte','rezeptemenu')" onMouseOut="popdown()">Rezepte</a></li>
+						<li name="cktvmenu" id="cktvmenu"><a href="/magazin/6,103,0/Chefkoch/" onMouseOver="popup('cktv','cktvmenu')" onMouseOut="popdown()">Video / TV</a></li>
+						<li name="communitymenu" id="communitymenu" ><a href="/forum/" onMouseOver="popup('community','communitymenu')" onMouseOut="popdown()">Community</a></li>
+						<li name="shoppingmenu" id="shoppingmenu"><a href="/shop-katalog/" onMouseOver="popup('shopping','shoppingmenu')" onMouseOut="popdown()">Shopping</a></li>
+					</ul>
+				</div>
+				
+				<!-- Navigation rechts (myChefkoch) //-->
+				<div id="navigation_2" class="navigation_2">
+					<ul class="tab_nav">
+						<li name="mychefkochmenu" id="mychefkochmenu"><a href="/mychefkoch/einstellungen/" onMouseOver="popup('mychefkoch','mychefkochmenu')" onMouseOut="popdown()">myChefkoch</a></li>
+					</ul>
+				</div>
+				
+				<!-- Links (<a>) oben-rechts //-->
+				<div id="header_links">
+					<a href="/faq/">Hilfe & FAQ</a> |
+					<a href="/newsletter.php" rel="nofollow">Newsletter</a> |
+					<a href="http://www.cooksunited.co.uk">recipes in <img src="http://cdn-dus.chefkoch.de/img/flag-gb.gif" width="16" height="11" alt="Recipes in english" align="absbottom"></a>
+				</div>
+				
+				<!-- ~~~~~~~~~~~~~~ -->
+				<!--  Schnellsuche  -->
+				<!-- ~~~~~~~~~~~~~~ -->
+				
+				<div id="schnellsuche_bg">
+					<div id="schnellsuche">
+						
+						<form name="searchform" action="/suche.php" method="get">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td valign="middle" height="25">
+									<input type="text" id="inputfield_quicksearch" name="suche" class="input_schnellsuche_text" value="" size="50">
+									
+										&nbsp;<select name="wo">
+											<option value="0">... überall</option>
+											<option value="4">... nur Magazin</option>
+											<option value="2" selected>... nur Rezepte</option>
+											<option value="1">... nur Foren</option>
+																						<option value="7">... nur Gruppen</option>
+											<option value="3">... nur User</option>
+											<option value="6">... nur Shopping</option>
+										</select>&nbsp;
+									<input type="submit" value="suchen" align="absmiddle">
+								</td>
+							</tr>
+						</table>
+						</form>
+						
+					</div>
+					
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					<!--  myChefkoch (Login oder Buttons)  -->
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
+					<span id="mycook-top">
+						
+<script type="text/javascript">
+// Ruft das Einblenden des Loginformulares auf oder leitet zur Login-Seite weiter wenn der Layer nicht
+// existiert oder die Funktion fehlt (weil das externe Script (noch) nicht geladen worden ist)
+function checkLogin() {
+	
+	if ( document.getElementById("login_form") && typeof(window.showLoginForm) == 'function' ) {
+		showLoginForm();
+	} else {
+		document.location = '/login.php';
+	}
+	
+}
+</script>
+
+<div id="mychefkoch_login">
+	<img src="http://cdn-dus.chefkoch.de/img/layout/icon_login.gif" border="0" width="16" height="16" id="login_icon" alt="">
+
+		<script type="text/javascript">document.write('<a href="javascript:checkLogin();">Login<\/a>');</script>
+		
+		<noscript>
+			<a href="/login.php">Login</a>
+		</noscript>
+		
+	| <a href="/register/index.php">Mitglied werden !</a>
+</div>
+
+<div id="mychefkoch_welcome">
+	Willkommen bei Chefkoch.de: Rezepte tauschen, sammeln und veröffentlichen, neue Freunde finden und treffen! <a href="/register/index.php" style="text-decoration:underline;color:black;">Mehr erfahren ...</a> 
+</div>
+
+
+
+
+&nbsp;
+&nbsp;					</span>
+					
+				</div>
+				
+				<!-- ~~~~~~~~~~~~~~~~ -->
+				<!--  Login-Formular  -->
+				<!-- ~~~~~~~~~~~~~~~~ -->
+				
+				<span id="mycook-bottom">
+					
+
+<!-- Login-Formular //-->
+<form name="loginform" action="/login.php" method="post">
+<div id="login_form">
+
+	<table id="login_form_table" class="login_form_table" summary="Loginform" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="hidechefkoch">
+				<input type="text" name="username" id="login_username" value="Benutzername" class="input_login_username" onBlur="if (value == '') {value = 'Benutzername'}" onFocus="if (value == 'Benutzername') {value =''}">
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="hidechefkoch">
+				<input type="password" name="password" id="login_password" value="Passwort" class="input_login_password" onBlur="if (value == '') {value = 'Passwort'}" onFocus="if (value == 'Passwort') {value =''}">
+				<input type="image" src="http://cdn-dus.chefkoch.de/img/layout/input_login_submit.gif" alt="anmelden" name="anmelden" align="absmiddle">
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="login_form_save_text">
+				&nbsp; <input type="checkbox" id="alltimelogin" style="margin-left:-5px;" name="setalltimelogin" value="1"><label id="login_alltime" for="alltimelogin" style="cursor:text;">Daten dauerhaft speichern</label>
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace_2"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr><td class="login_form_line"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr><td class="login_form_fieldspace_2"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"></td></tr>
+		<tr>
+			<td class="login_form_forgotten">
+				<a href="/userdatalost.php" class="pwlostlink"><strong>Ihre Logindaten vergessen?</strong></a>
+			</td>
+		</tr>
+		<tr><td class="login_form_fieldspace_3"><img src="http://cdn-dus.chefkoch.de/img/layout/blank.gif" alt="" title="" class="img_blank"><input type="submit" value="" style="border:none;background:transparent;"></td></tr>
+	</table>
+		
+</div>
+</form>
+				</span>
+				
+			</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Breadcrumb Navigation  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="breadcrumb">
+	&raquo; <a href="/">Startseite</a>
+	&raquo; <a href="/rezepte/">Rezepte</a>
+
+	
+		&raquo; <a href="/rezepte/391451126680345/Spaghetti-Carbonara.html">Spaghetti Carbonara</a>
+		&raquo; empfehlen
+	
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Superbanner (mittig)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="banner-top">
+	<div id="topbanner"></div></div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Content (Seiteninhalte)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id="content">
+
+	<div id="contentbox-1-1" class="contentbox">
+
+		<!-- linke Spalte -->
+		<div class="contentbox-left">
+
+			<!-- ~~~~~~~~~~~~~~~~~ -->
+			<!--  Fehlermeldungen  -->
+			<!-- ~~~~~~~~~~~~~~~~~ -->
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~ -->
+			<!--  Versende-Formular  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~ -->
+			
+								<h1>"Spaghetti Carbonara" per E-Mail empfehlen ...</h1>
+
+				<form name="formular" action="/rezepte/empfehlen/391451126680345/Spaghetti-Carbonara.html" method="post">
+				<p>
+										<label for="sender_email" class="nobr">Absender E-Mail:</label><br>
+					<input type=text maxlength=60 name="sender_email" id="sender_email" value="" size="60">
+				</p>
+				<p>
+										<label for="receiver_email" class="nobr">Empfänger E-Mail:</label><br>
+					<input type=text maxlength=60 name="receiver_email" id="receiver_email" value="" size="60">
+				</p>
+				<p>
+										<label for="message">Persönlichen Kommentar hinzufügen:</label><br>
+										<textarea name="message" id="message" rows=14 cols=32 wrap="physical" style="font-family: Verdana, Arial, Helvetica; font-size: 12; width: 100%" >Ich habe bei http://www.chefkoch.de ein leckeres Rezept gefunden...</textarea>
+				</p>
+								<input type="submit" name="send_mail_submit" value="Rezept per E-Mail verschicken">
+				</form>
+
+				<script type="text/javascript">
+					document.formular.sender_email.focus();
+				</script>
+
+								<p>&laquo; <a href="/rezepte/391451126680345/Spaghetti-Carbonara.html"><b>zurück zum Rezept</b></a></p>
+
+			
+			<!-- ~~~~~~~~~~~~~~~~~~ -->
+			<!--  Erfolgsmeldungen  -->
+			<!-- ~~~~~~~~~~~~~~~~~~ -->
+			
+		</div><!-- /linke Spalte -->
+
+		<!-- rechte Spalte -->
+		<div class="contentbox-right">
+
+			
+				<!-- ~~~~~~~~~~~~~~~~~~~ -->
+				<!--  Sidebar: Facebook  -->
+				<!-- ~~~~~~~~~~~~~~~~~~~ -->
+
+								<h2 class="box">Auf Facebook posten</h2>
+
+				<div class="right-box-grey" style="position: relative;">
+
+										Einfach auf den Link klicken, dann können Sie dieses Rezept mit Ihren Freunden auf Facebook teilen.<br>
+					<p>
+												<a href="/url-goto-utf8.php?url=http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.chefkoch.de%2Frezept%2F391451126680345%2F&t=Spaghetti+Carbonara+auf+Chefkoch.de" target="_blank">
+														Auf Facebook posten						</a>
+					</p>
+
+					<a href="/url-goto-utf8.php?url=http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.chefkoch.de%2Frezept%2F391451126680345%2F&t=Spaghetti+Carbonara+auf+Chefkoch.de" target="_blank">
+												<img src="http://cdn-dus.chefkoch.de/img/rezept-empfehlen/logo-facebook.gif" alt="" title="Auf Facebook posten" style="position: absolute; bottom: 17px; right: 10px;">
+					</a>
+
+				</div>
+
+				<!-- ~~~~~~~~~~~~~~~~~~ -->
+				<!--  Sidebar: Twitter  -->
+				<!-- ~~~~~~~~~~~~~~~~~~ -->
+
+								<h2 class="box">Auf Twitter posten</h2>
+
+				<div class="right-box-grey" style="position: relative;">
+
+										Einfach auf den Link klicken, dann können Sie dieses Rezept mit Ihren Followern auf Twitter teilen.<br>
+					<p>
+												<a href="/url-goto-utf8.php?url=http://twitter.com/home?status=Rezept%3A+Spaghetti+Carbonara+http%3A%2F%2Fwww.chefkoch.de%2Frezept%2F391451126680345%2F" target="_blank">
+														Auf Twitter posten						</a>
+					</p>
+
+					<a href="/url-goto-utf8.php?url=http://twitter.com/home?status=Rezept%3A+Spaghetti+Carbonara+http%3A%2F%2Fwww.chefkoch.de%2Frezept%2F391451126680345%2F" target="_blank">
+												<img src="http://cdn-dus.chefkoch.de/img/rezept-empfehlen/logo-twitter.gif" alt="" title="Auf Twitter posten" style="position: absolute; bottom: 22px; right: 10px;">
+					</a>
+
+				</div>
+
+			
+		</div><!-- /rechte Spalte -->
+
+		<div class="clear"></div>
+
+		<br>
+
+	</div><!-- /contentbox-2-1 -->
+
+</div><!-- /Content (Seiteninhalte) -->
+
+<!-- ~~~~~~~~~~~~~~~~ -->
+<!--  Google Textads  -->
+<!-- ~~~~~~~~~~~~~~~~ -->
+
+<span id="text-ads">
+	
+					<div style="padding: 10px;">
+						<script type="text/javascript"><!-- 
+						google_ad_client = "pub-5214522864208164"; 
+						/* DEFAULT-Footer */ 
+						google_ad_slot = "5675010904"; 
+						google_ad_width = 846; 
+						google_ad_height = 90; 
+						//--> 
+						</script> 
+						<script type="text/javascript" 
+						src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+						</script>
+					</div></span>
+
+<!-- ~~~~~~~~~~~~~~ -->
+<!--  Partnerlogos  -->
+<!-- ~~~~~~~~~~~~~~ -->
+
+<div id="partnerlogos">
+	<div style="margin:5px 0px;text-align:center;">
+	<span class="s">Weitere interessante Informationen auf den Chefkoch.de Partnerseiten:</span>
+	<table border="0" cellspacing="0" cellpadding="3" width="100%">
+		<tr>
+			<td align="center" valign="middle" width="50%"><a href="/magazin/rs/14,0,0/partnerlogo/"><img src="http://img.chefkoch.de/ck.de/comrezept-img/aeg-electrolux/aeg-electrolux.gif" title="AEG Electrolux - Perfekt in Form und Funktion" border="0"></a></td>
+			<td align="center" valign="middle" width="50%"><a href="/magazin/rs/40,0,0/partnerlogo/"><img src="http://cdn-dus.chefkoch.de/img/partnerlogos/wmf.gif" title="WMF" border="0"></a></td>
+			</tr>
+	</table>
+</div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  Footer (Partnerseiten, Live-Suchen, etc.)  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<div id="footer">
+				<div id="footer-top">
+	<div id="ck_statistik">
+	<nobr>23.741 User online</nobr>, 
+	<nobr>43 <a href="/useronline.php">angemeldet</a>, </nobr>
+	<nobr>178.251 Rezepte, </nobr>
+	<nobr>553.185 Themen, </nobr>
+	<nobr>9.769.861 Beiträge</nobr>
+</div>
+
+	<div>
+		<strong>Chefkoch.de - Europas größte Kochseite, &copy; 1998-2010 pixelhouse GmbH</strong><br>
+		<a href="/uebersicht.php">&Uuml;bersicht</a> | <a href="/impressum.php" rel="nofollow">Impressum</a> | <a href="/privacy.php" rel="nofollow">Datenschutz</a> | <a href="/werbung.php" rel="nofollow">Werben auf chefkoch.de (Mediadaten)</a> | <a href="/magazin/artikel/1426,0/Chefkoch/Jobs.html">Jobs</a><br>
+		<A HREF="/startseite.php" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.chefkoch.de');">Seite als Ihre Internetstartseite</A> | <a href="mailto:?subject=Interessante Kochseite&body=Hi! Schau Dir mal diese Kochseite an. 145.921 Rezepte, 8 Mio Forenbeiträge uvm. http://www.chefkoch.de">an Freunde empfehlen</a> | <a href="#" onclick="window.external.AddFavorite('http://www.chefkoch.de','Chefkoch.de - Europas größte Kochseite');">zu Favoriten hinzufügen</a>
+	</div>
+</div>
+<div id="footer-bottom"">
+	<span class="live-search">
+Live Rezeptsuchen: <a href="/rs/s0/6+g%E4nge+menu/Rezepte.html"  title="6 gänge menu">6 gänge menu rezepte</a>, <a href="/rs/s0/bl%E4tterteig+kalt/Rezepte.html"  title="blätterteig kalt">blätterteig kalt rezepte</a>, <a href="/rs/s0/champignons+gef%FCllt+tapas/Rezepte.html"  title="champignons gefüllt tapas">champignons gefüllt tapas rezepte</a>, <a href="/rs/s0/e+h%FChnchen/Rezepte.html"  title="e hühnchen">e hühnchen rezepte</a>, <a href="/rs/s0/florentiner+kirschen+orangeat/Rezepte.html"  title="florentiner kirschen orangeat">florentiner kirschen orangeat rezepte</a>, <a href="/rs/s0/frieda+marmor%2A/Rezepte.html"  title="frieda marmor*">frieda marmor* rezepte</a>, <a href="/rs/s0/himbeeren/Rezepte.html"  title="himbeeren">himbeeren rezepte</a>, <a href="/rs/s0/kartoffeln+mit+sauerrahm+sauce/Rezepte.html"  title="kartoffeln mit sauerrahm sauce">kartoffeln mit sauerrahm sauce rezepte</a>, <a href="/rs/s0/paprika+mandeln/Rezepte.html"  title="paprika mandeln">paprika mandeln rezepte</a>, <a href="/rs/s0/so%DFe+tomatenmark+schmand/Rezepte.html"  title="soße tomatenmark schmand">soße tomatenmark schmand rezepte</a>	</span>
+	<img src="/counter4.php?a=1&user=&page=/rezept-empfehlen.php&img_time=1296364222&cache=not_cached" alt="">
+	<img src="/counter5.php?a=2&img_time=1296364222&ref=" alt="">
+
+	<div id="gjfooter" style="margin-top:20px;">
+	<a  target="_blank" href="http://www.geo.de/">Reisen</a> auf GEO, <a  target="_blank" href="http://www.dogs-magazin.de/">Hunde</a> auf DOGS MAGAZIN, <a  target="_blank" href="http://www.wiewohnstdu.de/">Wohnen</a> auf WieWohnstDu.de, <a  target="_blank" href="http://www.sz-online.de/">Infos</a> auf Sächsische Zeitung, <a  target="_blank" href="http://www.neueszuhause.de/">Einrichten</a> auf neueszuhause.de, <a  target="_blank" href="http://www.kino.de/">Filme</a> auf kino.de, <a  target="_blank" href="http://www.myhealthyday.de/">Gesundheit</a> auf healthyliving.de, <a  target="_blank" href="http://www.gala.de/">Stars</a> auf Gala, <a href="/bag-partner.php">Partnerseiten</a>
+	</div>
+</div>			</div>
+			
+		</div><!-- /wrapper -->
+		
+		<!-- Content-Box die (mit abgedunkeltem Hintergrund) uber allem eingeblendet wird -->
+		<div id="overlayBox" class="overlayBox"></div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  Temporaere Container fuer Werbung  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<span id="banner-top-tmp">
+			
+																						<script type="text/javascript">
+																							var nuggrid=encodeURIComponent(top.location.href) || 0;
+																							var n_pbt='';
+																							document.write('<scr'+'ipt type="text/javascript" src="http://emsguj.nuggad.net/rc?nuggn=1886380617&nuggsid=953893804&nuggrid=' + nuggrid + '"><\/scr'+'ipt>');  
+																							var setnugg="1";
+																						</script>
+																						<div id="tmp_topbanner" style="display:none;">
+																								<script language="JavaScript" type="text/javascript">
+																									if ( document.getElementById("topbanner") ) {
+																										if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																										document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-rubriken/rezepte;pg=rezepte;!category=stop;sz=468x60;tile=1;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																									}
+																								</script>
+																								<script language="JavaScript" type="text/javascript">
+																									var LeaderBoard;
+																									var wallpaper;
+																									
+																									if ( wallpaper == 1 ) {
+																										var wallpaperDiv = document.getElementById("banner-wallpaper");
+																										ad_banner_show( "tmp_topbanner", "wallpaperbanner" );
+																									} else if ( LeaderBoard == 1 ) {
+																										var topBannerDiv = document.getElementById("topbanner");
+																										topBannerDiv.style.paddingTop = "10px";
+																										ad_banner_show( "tmp_topbanner", "topbanner" );
+																									}
+																								</script>
+																						</div>		</span>
+		<span id="banner-sky">
+			
+																						<div id="SkyScraper">
+																							<div>
+																								<script language="JavaScript" type="text/javascript">
+																									if((typeof wallpaper == "undefined") || (wallpaper == 0)) {
+																										if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																										if(screen.width >= 1000) {sol = "yes";} else {sol = "no";}
+																										document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-scroll_sky/rezepte;pg=rezepte;!category=stop;res='+sol+';sz=1x1;dcopt=ist;tile=2;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																									}
+																								</script>
+																							</div>
+																						</div>		</span>
+		<span id="banner-hpa-mr-temp">
+			
+																							<div id="tmp_hpamrbanner" style="display:none;">
+																									<script language="JavaScript" type="text/javascript">
+																											if ( document.getElementById("hpamrbanner") ) {
+																												if(typeof ad_rand_no == "undefined") {ad_rand_no = parseInt(Math.random()*10000000000000000);}
+																												document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-halfpage/rezepte;pg=rezepte;!category=stop;sz=1x1;tile=3;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																											}
+																											var halfpage;
+																										</script>
+																										<script language="JavaScript" type="text/javascript">
+																											if ( document.getElementById("hpamrbanner") && ( (typeof halfpage == "undefined") || (halfpage == 0) ) ) {
+																												document.write('<script language="JavaScript" src="http://ad.de.doubleclick.net/adj/chefkoch-contentad/rezepte;pg=rezepte;!category=stop;sz=1x1;tile=3;'+n_pbt+';ord='+ad_rand_no+'?" type="text/javascript"><\/script>');
+																											}
+																											var contentad;
+																										</script>
+																										<script language="JavaScript" type="text/javascript">
+																											if ( (halfpage == 1) || (contentad == 1) ) {
+																												var hpamrbannerDiv = document.getElementById("hpamrbanner");
+																												hpamrbannerDiv.style.marginBottom = "20px";
+																												ad_banner_show( "tmp_hpamrbanner", "hpamrbanner" );
+																											}
+																									</script>
+																							</div>		</span>
+		<span id="content-banner-tmp">
+			
+																							<div id="tmp_contentbanner" style="display:none;">
+																							</div>		</span>
+		
+		<!-- ~~~~~~~~~~~~~ -->
+		<!--  Statistiken  -->
+		<!-- ~~~~~~~~~~~~~ -->
+		
+				
+				
+		<!-- SZM VERSION="1.5" -->
+		<!-- Dieses Online-Angebot unterliegt nicht der IVW-Kontrolle! -->
+		<script type="text/javascript">
+		<!--
+		var IVW="http://chefkoch.ivwbox.de/cgi-bin/ivw/CP/1E06HCMA;";
+		document.write("<img src=\""+IVW+"?r="+escape(document.referrer)+"&d="+(Math.random()*100000)+"\" width=\"1\" height=\"1\" alt=\"szmtag\" />");
+		//-->
+		</script>
+		<noscript>
+		<img src="http://chefkoch.ivwbox.de/cgi-bin/ivw/CP/1E06HCMA;"
+		width="1" height="1" alt="szmtag" />
+		
+		</noscript>
+		<!-- /SZM -->
+		<!-- SZMFRABO VERSION="1.1" -->
+		<script language="JavaScript" type="text/javascript"> 
+		var szmvars="chefkoch//CP//1E06HCMA";
+		</script>
+		<script src="http://chefkoch.ivwbox.de/2004/01/survey.js" language="JavaScript" type="text/javascript">
+		</script>
+		<!-- /SZMFRABO -->
+		
+				
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-262191-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+		</script>
+		
+	</body>
+</html>
+<span class="s runtime_ck" style="color:gray">(runtime: 0.012142 sec on cook2.chefkoch.de)</span>
