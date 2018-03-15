@@ -1,3 +1,6 @@
+//ODCB driver needs to be install 
+//install via CMD "npm install mysql"
+
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -8,6 +11,19 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected to localhost!");
+  if (err)  {
+    console.log('Error connecting to kochbar@localhost!');
+      return;
+      
+      
+  };
+  console.log("Connected to kochbar@localhost!");
+    con.query('SELECT * FROM kochbar.kochbar_analysis_recipe', (err,rows) =>
+             { if(err) throw err;
+              
+              console.log('Data received');
+              console.log(rows);
+        
+        
+    })
 });
