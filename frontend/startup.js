@@ -4,6 +4,7 @@
 //Or use "node startup.js" in CMD
 
 var http = require('http');
+var db = require('./databaseConnector')
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
