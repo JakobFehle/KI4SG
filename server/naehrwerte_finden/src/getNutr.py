@@ -7,3 +7,4 @@ print "Fett: " + str(rezept.naehrwerte['ZF'])
 print "Masse: " + str(rezept.menge) + " Gramm"
 
 #rezept.zutatenanzeigen()
+
