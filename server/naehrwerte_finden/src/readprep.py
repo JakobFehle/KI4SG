@@ -71,8 +71,6 @@ class ZeitManager:
 		#	else:
 		#		print "   "+str(zeitlistenEintraege[0])+" Minuten ("+self.zeiteinheiten[zeitlistenEintraege[2]].wortlaut.encode("iso-8859-1")+")<br />"
 		
-		
-		
 class VorgangsManager:
 	def __init__(self):
 		self.vorgaenge=[]
@@ -114,7 +112,6 @@ class ZutatenManager:
 	def relationenZuZutatenlisteZuordnen(self,vorgMan):
 		for zuta in self.zutaten:
 			zuta.relationenZuZutatenlisteZuordnen(vorgMan)
-	
 	
 class Zutat:
 	def __init__(self,zutatAusZutatenliste,bewertung,satzNr,nebensatzNr,wortNr):
@@ -159,7 +156,6 @@ class WerkzeugManager:
 			werk.ausgabe()
 			print "<br />"
 	
-
 class Werkzeug:
 	def __init__(self,wortl, unterg, oberg, obergID,satzNr,nebensatzNr,wortNr):
 		self.wortlaut=wortl
@@ -187,9 +183,6 @@ class Containerwort:
 		self.satzNummer=satzNr
 		self.nebensatzNummer=nebensatzNr
 		self.wortNummer=wortNr
-
-		
-
 
 class ZubereitungsBeschreibung:
 
@@ -732,7 +725,6 @@ class ZubereitungsBeschreibung:
 	def runShellCommand(self, cmd):
 		return subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
 
-
 class WortListenVerwaltung:
 	def __init__(self):
 		self.vorgangsObergruppen=self.vorgangsObergruppenEinlesen('ProcedureListMainGroup')
@@ -933,7 +925,6 @@ class WortListenVerwaltung:
 			untergruppenListe.append([eintr['bezeichnung'],eintr['obergruppen_id']])
 		return untergruppenListe
 
-		
 class treetagger:
 	def __init__(self):
 		self.tagger = treetaggerwrapper.TreeTagger(TAGLANG='de',TAGDIR=configuration.getAttribute('tagdir'))

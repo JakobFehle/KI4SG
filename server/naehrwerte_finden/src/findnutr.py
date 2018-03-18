@@ -1,13 +1,41 @@
-﻿from __future__ import division
+# encoding=utf8
+from __future__ import division
 import codecs
 import MySQLdb
 import sys
 import re
+import json
+import io
 from glob import glob
 from operator import itemgetter
 
 from readconfig import *
 
+rezeptJson = r'''{
+            "recipe_href" : "/rezept/501707/Gefuellte-Zucchini-und-Paprika.html",
+            "title" : "Gefüllte Zucchini und Paprika",
+            "description" : "die letzte Zucchini aus eigener Ernte",
+            "ratings" : 21,
+            "average_rating" : 5,
+            "numstars" : 5,
+            "comments" : 8,
+            "favorites" : 2,
+            "views" : 204,
+            "servings" : 2,
+            "ingredients_string" : "1:Zucchini \n 2:Paprika rot \n 200 g:Feta \n 250 g:Schinken \n optional für die Soße \n 1:Zwiebel frisch \n 300 g:Passierte Tomaten \n :Pfeffer \n :Salz \n :Majoran getrocknet",
+            "preparation_instructions" : "Anmerkung: Es war die letzte Zucchini aus eigener Ernte in diesem Jahr und darum habe ich noch eine Paprika gefüllt. \n Die Zucchini (meine war etwa 25 cm lang) und Paprika waschen und halbieren. Zucchini mit einem Löffel auskratzen, das Fruchtfleisch kann man für die Soße verwenden. Von den Paprikas die Kerne und entfernen. Paprika fein würfeln. \n Den Feta, eine Paprika und auch den Schinken fein würfeln (oder gleich fein gewürfelten Schinken verwenden). Alle Würfelchen gut miteinander vermischen \n Zucchini und die 2 halben Paprika in die leicht gefettete Auflaufform setzen und mit der vorbereiteten Füllung füllen. \n Wer dazu eine Soße mag: Das Fruchtfleisch der Zucchini und eine Zwiebel klein schneiden, passierte Tomaten zufügen umrühren und nach persönlichem Geschmack würzen. Die Soße dann  in die Auflaufform geben und die Zucchini und Paprika dort hinein setzen. \n Im vorgeheizten Backofen etwa 20 min. bei 180°C backen",
+            "difficulty" : "leicht",
+            "duration" : 30,
+            "price" : "1",
+            "kj" : 447,
+            "kcal" : 107,
+            "protein" : 10.9,
+            "carbohydrates" : 1.3,
+            "fat" : 6.6,
+            "date" : "2014-11-19",
+            "num_ingredients" : 9,
+            "class_sweet" : 0
+        }'''
 
 class DatenBank:
 # Diese Klasse bildet ein Interface zu den verwendeten Datenbank-Tabellen. Ein Objekt der Klasse wird global instanziiert, sodass alle Klassen darauf zugreifen können.
@@ -306,8 +334,6 @@ class Zutat:
 	def anzeigen(self):
 	# Zur Ausgabe der ermittelten Informationen.
 		print "Bezeichnung: "+self.name.encode("iso-8859-1")
-
-
 
 
 class Rezepteintrag:
@@ -879,8 +905,130 @@ class Regeln:
 
 		return word
 
+        
+class Rezept1:
+    
+    def __init__(self, dateiname):
+
+        self.json = '' # Der Quelltext des Rezeptes im HTML-Format.
+        self.zutaten = [] # Eine Liste aller im Rezept enthaltenen Zutaten. Jede Zutat ist dabei eine Instanz der Klasse "Rezepteintrag".
+        self.url= '' # Die URL des Rezeptes.
+        self.beschreibung = '' # Die Zubereitungs-Beschreibung des Rezeptes.
+        self.titel = '' # Der Titel des Rezeptes.
+
+        self.menge = 0.0 # Die Gesamtmasse des Rezeptes, also die Summe der Masse aller enthaltenen Zutaten.
+        self.portionsgroese = -1 # Anzahl der Portionen, zum Beispiel "4"
+
+        self.naehrwerte = {} # Eine Liste aller im Rezept enthaltenen N婲werte. Enthaltene Kilokalorien sind beispielsweise 𢥲 den Wert "naehrwerte['GCAL']" abrufbar, enthaltene Proteine in Milligramm 𢥲 den Wert "naehrwerte['ZE']". Die Abk𲺵ngen und Einheiten der verschiedenen N婲werte k򮮥n dem Handbuch des Bundeslebensmittelschl𳳥ls (Seite 24-28) entnommen werden.
+        self.naehrwertepro100g = {} # Eine Liste aller im Rezept enthaltenen N婲werte pro 100g.
+
+        self.__readJson(dateiname)
+        self.__parseJson()
+
+        for zutat in self.zutaten:
+            if zutat.besteZutat!='' and zutat.mengeInG>0.0:
+                self.menge=self.menge+zutat.mengeInG
+                for key in zutat.besteZutat.naehrwerte:
+                    #zutat.besteZutat.naehrwerte[key]
+                    if key in self.naehrwerte:
+                        self.naehrwerte[key]=self.naehrwerte[key]+(float(zutat.besteZutat.naehrwerte[key])*zutat.mengeInG)
+                    else:
+                        self.naehrwerte[key]=float(zutat.besteZutat.naehrwerte[key])*zutat.mengeInG
+
+        for key in self.naehrwerte:
+            self.naehrwerte[key]=self.naehrwerte[key]/100.0
 
 
+        # Pro 100g
+        if (self.menge>0.0):
+            for key in self.naehrwerte:
+                self.naehrwertepro100g[key]=float(self.naehrwerte[key])*100.0/self.menge
+                
+    def zutatenanzeigen(self):
+    # Diese Funktion kann zur Ausgabe der ermittelten Informationen verwendet werden.
+
+        print "URL: "+ self.url.encode("iso-8859-1")
+        print "Titel: "+ self.titel.encode("iso-8859-1")
+        print '---'
+        for zutat in self.zutaten:
+            zutat.anzeigen()
+
+        print "\n\n\nNaehrwerte im Rezept:\n"
+
+        for key in self.naehrwerte:
+            print key +": "+str(self.naehrwerte[key])+", ",
+             
+    def __readJson(self, dateiname):
+        #with io.open(dateiname, encoding="utf-8") as json_file:
+        #    data = json.load(json_file)
+        self.json = json.loads(rezeptJson)
+       
+
+    def __parseJson(self):
+        #Titel
+        if (self.json['title']!=""):
+            self.titel = self.json['title']
+        else:
+            self.titel = 'nicht gefunden'
+
+        #URL
+        if (self.json['recipe_href']!=""):
+            self.url=self.json['recipe_href']
+        else:
+            self.url='nicht gefunden'
+
+        #Rezeptzubereitung
+        if (self.json['preparation_instructions']!=""):
+            self.beschreibung=self.json['preparation_instructions']
+        else:
+            self.beschreibung='nicht gefunden'
+
+        #Zeit
+        self.zeit=0
+        if (self.json['duration']!=""):
+            self.zeit=self.json['duration']
+        else:
+            self.zeit='nicht gefunden'
+        
+        #Zutaten
+        self.zutatenRaw = []
+        zutaten = self.json['ingredients_string'].split('\n')
+        
+        zutaten = [item for item in zutaten if ":" in item]
+        
+        for zutatRaw in zutaten:
+            self.zutatenRaw.append(zutatRaw.strip())
+        
+        for index, zutatRaw in enumerate(self.zutatenRaw):
+            if ":" in zutatRaw:
+                var1 = self.zutatenRaw[index].split(":")
+                var2 = var1[0].split(" ")
+                self.zutatenRaw[index] = []
+                
+                try:
+                    self.zutatenRaw[index].append(var2[0])
+                except IndexError:
+                    '1'
+                try:
+                    self.zutatenRaw[index].append(var2[1]) 
+                except IndexError:
+                    '2'
+                try:
+                    self.zutatenRaw[index].append(var1[1]) 
+                except IndexError:
+                    '3'  
+            else:
+                self.zutatenRaw.remove(zutatRaw)
+        print self.zutatenRaw
+
+        for zutat in self.zutatenRaw:
+            zutatLength = len(zutat)
+            if zutatLength == 3:
+                self.zutaten.append(Rezepteintrag(zutat[0].lower().strip(),zutat[1].lower().strip(),zutat[2].lower().strip()))
+            elif zutatLength == 2:
+                self.zutaten.append(Rezepteintrag(zutat[0].lower().strip(),'',zutat[1].lower().strip()))
+            else:
+                '1'
 # Globale Datenbank
 datenbank=DatenBank()
 
