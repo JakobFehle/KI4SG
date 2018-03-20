@@ -518,152 +518,6 @@ class Rezepteintrag:
 				self.besteZutat=gefundenes
 
 
-class Rezept:
-# Eine Instanz der Klasse "Rezept" repräsentiert ein Rezept der verwendeten Rezept-Seite "chefkoch.de".
-# Im HTML-Format vorliegende Rezepte können geparst werden.
-# Gespeichert werden URL des Chefkoch-Rezeptes, Titel, Zubereitungs-Beschreibung und eine Liste aller Zutaten,
-# jeweils bestehend aus einer Mengeneinheit (zum Beispiel "Gramm"; "Liter"), einem Mengenquantum (zum Beispiel "3"; "5") und einer Bezeichnung (zum Beispiel "Zucker"; "Ei(er), möglichst frisch").
-# Die Klasse liefert dann die Gesamtmasse aller im Rezept enthaltenen Zutaten, die enthaltenen Nährwerte aller Zutaten werden aufaddiert und sind ebenfalls abrufbar.
-
-
-	def zutatenanzeigen(self):
-	# Diese Funktion kann zur Ausgabe der ermittelten Informationen verwendet werden.
-
-		print "URL: "+ self.url.encode("iso-8859-1")
-		print "Titel: "+ self.titel.encode("iso-8859-1")
-		print '---'
-		for zutat in self.zutaten:
-			zutat.anzeigen()
-
-		print "\n\n\nNaehrwerte im Rezept:\n"
-
-		for key in self.naehrwerte:
-			print key +": "+str(self.naehrwerte[key])+", ",
-
-
-	def __init__(self, dateiname):
-	# Zum Instanziieren eines Objektes wird dieser Funktion Pfad und Dateiname eines Rezeptes im HTML-Format übergeben. Alle Informationen werden dann automatisch ermittelt.
-
-		self.text = '' # Der Quelltext des Rezeptes im HTML-Format.
-		self.zutaten = [] # Eine Liste aller im Rezept enthaltenen Zutaten. Jede Zutat ist dabei eine Instanz der Klasse "Rezepteintrag".
-		self.url= '' # Die URL des Rezeptes.
-		self.beschreibung = '' # Die Zubereitungs-Beschreibung des Rezeptes.
-		self.titel = '' # Der Titel des Rezeptes.
-
-		self.menge = 0.0 # Die Gesamtmasse des Rezeptes, also die Summe der Masse aller enthaltenen Zutaten.
-		self.portionsgroese = -1 # Anzahl der Portionen, zum Beispiel "4"
-
-		self.naehrwerte = {} # Eine Liste aller im Rezept enthaltenen Nährwerte. Enthaltene Kilokalorien sind beispielsweise über den Wert "naehrwerte['GCAL']" abrufbar, enthaltene Proteine in Milligramm über den Wert "naehrwerte['ZE']". Die Abkürzungen und Einheiten der verschiedenen Nährwerte können dem Handbuch des Bundeslebensmittelschlüssels (Seite 24-28) entnommen werden.
-		self.naehrwertepro100g = {} # Eine Liste aller im Rezept enthaltenen Nährwerte pro 100g.
-
-		self.__rezeptDateiLesen(dateiname)
-		self.__zutatenFinden()
-
-		for zutat in self.zutaten:
-			if zutat.besteZutat!='' and zutat.mengeInG>0.0:
-				self.menge=self.menge+zutat.mengeInG
-				for key in zutat.besteZutat.naehrwerte:
-					#zutat.besteZutat.naehrwerte[key]
-					if key in self.naehrwerte:
-						self.naehrwerte[key]=self.naehrwerte[key]+(float(zutat.besteZutat.naehrwerte[key])*zutat.mengeInG)
-					else:
-						self.naehrwerte[key]=float(zutat.besteZutat.naehrwerte[key])*zutat.mengeInG
-
-		for key in self.naehrwerte:
-			self.naehrwerte[key]=self.naehrwerte[key]/100.0
-
-
-		# Pro 100g
-		if (self.menge>0.0):
-			for key in self.naehrwerte:
-				self.naehrwertepro100g[key]=float(self.naehrwerte[key])*100.0/self.menge
-
-	def __rezeptDateiLesen(self,dateiname):
-	# Einlesen der Rezeptdatei
-
-		datei = codecs.open(dateiname, "r", "utf-8")
-		#datei = open(dateiname,'r')
-		self.text = datei.read()
-		datei.close()
-
-	def __zutatenFinden(self):
-	# Parsen der Rezeptdatei
-
-		if (self.text.find('h1 class="big"')>=0):
-			self.titel = self.text[self.text.find('h1 class="big"'):]
-			self.titel = self.titel[self.titel.find('>')+1:self.titel.find('</h1')]
-		else:
-			self.titel = 'nicht gefunden'
-
-		self.url = self.text[:self.text.find('\n')]
-		if (self.url.find('URL:')==0):
-			self.url=self.url[4:]
-		else:
-			self.url='nicht gefunden'
-
-		if (self.text.find('<div id="rezept-zubereitung"')>=0):
-			self.beschreibung=self.text[self.text.find('<div id="rezept-zubereitung"')+5:]
-			self.beschreibung=self.beschreibung[self.beschreibung.find('>')+1:]
-			self.beschreibung=self.beschreibung[:self.beschreibung.find('</div>')].strip()
-		else:
-			self.beschreibung='nicht gefunden'
-
-		#Zeit
-		self.zeit=0
-		zeitanfang=self.text.find('Zubereitungszeit:')
-		if (zeitanfang>=0):
-			zeitanfang=self.text.find('class="n">',zeitanfang)+10
-			zeitende=self.text.find('</span>',zeitanfang)
-			if (zeitanfang>=0 and zeitende>=0):
-				self.zeit=self.text[zeitanfang:zeitende]
-
-
-		#Portionsgroese
-		portionsgroeseanfang=self.text.find('<input type="text" name="divisor" size="2" value="')
-		if (portionsgroeseanfang>=0):
-			portionsgroeseanfang=portionsgroeseanfang+50
-			portionsgroeseende=self.text.find('"',portionsgroeseanfang)
-			self.portionsgroese=self.text[portionsgroeseanfang:portionsgroeseende]
-			if (not(self.portionsgroese.isdigit())):
-				self.portionsgroese=-1
-		else:
-			self.portionsgroese=-1
-
-		#Find critical section (surrounded by the "zutaten" table)
-		tmptext=self.text[self.text.find('table class="zutaten"'):]
-		tmptext=tmptext[:tmptext.find("</table")]
-		#Read the table-fields
-		beg=tmptext.find('<td')
-		ingrcounter=0;
-		while (beg>=0):
-
-
-			tmptext=tmptext[tmptext.find('>',beg)+1:]
-			ingredient=tmptext[:tmptext.find('</td')]
-			#remove remaining tags (e.g. <a..>)
-			ingredientTagStart=ingredient.find('<')
-			ingredientTagStop=ingredient.find('>',ingredientTagStart)
-			while ((ingredientTagStart>=0) and (ingredientTagStop>=0)):
-				ingredient=ingredient[:ingredientTagStart]+ingredient[ingredientTagStop+1:]
-				ingredientTagStart=ingredient.find('<')
-				ingredientTagStop=ingredient.find('>',ingredientTagStart)
-			if (ingrcounter%2==0):
-				amount=ingredient
-			else:
-				if (ingredient.strip().lower().find(u'für')!=0 and ingredient.strip().lower().find(u'außerdem')!=0 and ingredient.strip().lower().find(u'zum')!=0):
-					amount=amount.strip()
-					amountunit = ''
-					unitbreak = amount.find('&nbsp;')
-					if (unitbreak>=0):
-						amountunit = amount[unitbreak+6:]
-						amount = amount[:unitbreak]
-
-
-					self.zutaten.append(Rezepteintrag(amount.strip(), amountunit.strip(), ingredient.strip()))
-			ingrcounter=ingrcounter+1
-			beg=tmptext.find('<td')
-
-
 class Regeln:
 # Diese Klasse stellt verschiedene Hilfsfunktionen zur Verfügung.
 # Ein Objekt der Klasse wird global instanziiert, so dass alle Klassen darauf zugreifen können.
@@ -906,9 +760,9 @@ class Regeln:
 		return word
 
         
-class Rezept1:
+class Rezept:
     
-    def __init__(self, dateiname):
+    def __init__(self, jsonData):
 
         self.json = '' # Der Quelltext des Rezeptes im HTML-Format.
         self.zutaten = [] # Eine Liste aller im Rezept enthaltenen Zutaten. Jede Zutat ist dabei eine Instanz der Klasse "Rezepteintrag".
@@ -922,7 +776,7 @@ class Rezept1:
         self.naehrwerte = {} # Eine Liste aller im Rezept enthaltenen N婲werte. Enthaltene Kilokalorien sind beispielsweise 𢥲 den Wert "naehrwerte['GCAL']" abrufbar, enthaltene Proteine in Milligramm 𢥲 den Wert "naehrwerte['ZE']". Die Abk𲺵ngen und Einheiten der verschiedenen N婲werte k򮮥n dem Handbuch des Bundeslebensmittelschl𳳥ls (Seite 24-28) entnommen werden.
         self.naehrwertepro100g = {} # Eine Liste aller im Rezept enthaltenen N婲werte pro 100g.
 
-        self.__readJson(dateiname)
+        self.__readJson(jsonData)
         self.__parseJson()
 
         for zutat in self.zutaten:
@@ -957,11 +811,14 @@ class Rezept1:
 
         for key in self.naehrwerte:
             print key +": "+str(self.naehrwerte[key])+", ",
-             
-    def __readJson(self, dateiname):
+
+            
+    def __readJson(self, jsonData):
         #with io.open(dateiname, encoding="utf-8") as json_file:
-        #    data = json.load(json_file)
-        self.json = json.loads(rezeptJson)
+        #    self.json = (json.load(json_file))[1]
+        
+        self.json = jsonData
+
        
 
     def __parseJson(self):
@@ -1019,7 +876,6 @@ class Rezept1:
                     '3'  
             else:
                 self.zutatenRaw.remove(zutatRaw)
-        print self.zutatenRaw
 
         for zutat in self.zutatenRaw:
             zutatLength = len(zutat)
@@ -1029,6 +885,14 @@ class Rezept1:
                 self.zutaten.append(Rezepteintrag(zutat[0].lower().strip(),'',zutat[1].lower().strip()))
             else:
                 '1'
+    
+    def returnJson(self):
+        self.json['kcal'] = self.naehrwerte['GCAL']
+        self.json['fat'] = self.naehrwerte['ZF']/1000
+        
+        return self.json
+    
+    
 # Globale Datenbank
 datenbank=DatenBank()
 
