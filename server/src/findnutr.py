@@ -11,31 +11,6 @@ from operator import itemgetter
 
 from readconfig import *
 
-rezeptJson = r'''{
-            "recipe_href" : "/rezept/501707/Gefuellte-Zucchini-und-Paprika.html",
-            "title" : "Gefüllte Zucchini und Paprika",
-            "description" : "die letzte Zucchini aus eigener Ernte",
-            "ratings" : 21,
-            "average_rating" : 5,
-            "numstars" : 5,
-            "comments" : 8,
-            "favorites" : 2,
-            "views" : 204,
-            "servings" : 2,
-            "ingredients_string" : "1:Zucchini \n 2:Paprika rot \n 200 g:Feta \n 250 g:Schinken \n optional für die Soße \n 1:Zwiebel frisch \n 300 g:Passierte Tomaten \n :Pfeffer \n :Salz \n :Majoran getrocknet",
-            "preparation_instructions" : "Anmerkung: Es war die letzte Zucchini aus eigener Ernte in diesem Jahr und darum habe ich noch eine Paprika gefüllt. \n Die Zucchini (meine war etwa 25 cm lang) und Paprika waschen und halbieren. Zucchini mit einem Löffel auskratzen, das Fruchtfleisch kann man für die Soße verwenden. Von den Paprikas die Kerne und entfernen. Paprika fein würfeln. \n Den Feta, eine Paprika und auch den Schinken fein würfeln (oder gleich fein gewürfelten Schinken verwenden). Alle Würfelchen gut miteinander vermischen \n Zucchini und die 2 halben Paprika in die leicht gefettete Auflaufform setzen und mit der vorbereiteten Füllung füllen. \n Wer dazu eine Soße mag: Das Fruchtfleisch der Zucchini und eine Zwiebel klein schneiden, passierte Tomaten zufügen umrühren und nach persönlichem Geschmack würzen. Die Soße dann  in die Auflaufform geben und die Zucchini und Paprika dort hinein setzen. \n Im vorgeheizten Backofen etwa 20 min. bei 180°C backen",
-            "difficulty" : "leicht",
-            "duration" : 30,
-            "price" : "1",
-            "kj" : 447,
-            "kcal" : 107,
-            "protein" : 10.9,
-            "carbohydrates" : 1.3,
-            "fat" : 6.6,
-            "date" : "2014-11-19",
-            "num_ingredients" : 9,
-            "class_sweet" : 0
-        }'''
 
 class DatenBank:
 # Diese Klasse bildet ein Interface zu den verwendeten Datenbank-Tabellen. Ein Objekt der Klasse wird global instanziiert, sodass alle Klassen darauf zugreifen können.
@@ -887,10 +862,35 @@ class Rezept:
                 '1'
     
     def returnJson(self):
-        self.json['kcal'] = self.naehrwerte['GCAL']
-        self.json['fat'] = self.naehrwerte['ZF']/1000
+    #Vitamin A, E, B1,B2,B6, B12,C
+    #calcium, magenesiom, kalium, eisen, jod, zink, selen
+    #eiweiß, fett, linolsäure,linolensäure, kohlenhydrate, ballaststoffe
         
-        return self.json
+    
+        result = {}
+        result['recipe_href'] = self.json['recipe_href']
+        result['kcal'] = round(self.naehrwerte['GCAL'],2)
+        result['fat'] = round((self.naehrwerte['ZF']/1000),2) # Gramm
+        result['va'] = self.naehrwerte['VA']
+        result['ve'] = self.naehrwerte['VE']
+        result['vb1'] = self.naehrwerte['VB1']
+        result['vb2'] = self.naehrwerte['VB2']
+        result['vb6'] = self.naehrwerte['VB6']
+        result['vb12'] = self.naehrwerte['VB12']
+        result['vc'] = self.naehrwerte['VC']
+        result['calcium'] = self.naehrwerte['MCA']
+        result['magnesium'] = self.naehrwerte['MMG']
+        result['kalium'] = self.naehrwerte['MK']
+        result['eisen'] = self.naehrwerte['MFE']
+        result['iodid'] = self.naehrwerte['MJ']
+        result['zink'] = self.naehrwerte['MZN']
+        result[u'eiweiß'] = self.naehrwerte['ZE']
+        result[u'linolsäure'] = self.naehrwerte['F182']
+        result[u'linolensäure'] = self.naehrwerte['F183']
+        result['kohlenhydrate'] = self.naehrwerte['ZK']
+        result['ballaststoffe'] = self.naehrwerte['ZB']
+
+        return result
     
     
 # Globale Datenbank
