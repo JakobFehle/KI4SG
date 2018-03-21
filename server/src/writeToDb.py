@@ -1,8 +1,8 @@
 #!/usr/bin/python2.7
 import json
 import io
-import mysql;
-import mysql.connector;
+import mysql
+import mysql.connector
 from findnutr import *
 #Verbindung erstellen
 
@@ -31,12 +31,15 @@ def createTable():
 
 
 def writeNuts(recipe_href,kcal,eiweis,kohlenhydrate,fat,calcium,kalium,eisen,zink,magnesium,ballaststoffe,linolsaeure, linolensaeure,iodid,va,vc,ve,vb1,vb2,vb6,vb12):
-    try:
+    """try:
         connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="kochbar")
         print "Connection established!"
     except:
         print "Couldnt connect to database"
-        exit(0)
+        exit(0)"""
+    # Exception Handling remove for the sake of perfomance...
+
+    connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="kochbar")
 
  #Datensatz einfuegen
     cursor = connection.cursor()
@@ -45,13 +48,15 @@ def writeNuts(recipe_href,kcal,eiweis,kohlenhydrate,fat,calcium,kalium,eisen,zin
     connection.commit()
 
 #Datensaetze auslesen
+#Removed for the sake of perfomance..
+    """
     cursor = connection.cursor()
     cursor.execute("SELECT * from RecipeNuts")
     result = cursor.fetchall()
     cursor.close()
 
     for data in result:
-        print "RezeptID: " + str(data[0]) + "; KCAL: " + data[1]+ ",Eiweis: " +data[2]
+        print "RezeptID: " + str(data[0]) + "; KCAL: " + data[1]+ ",Eiweis: " +data[2]"""
 
     return;
 
