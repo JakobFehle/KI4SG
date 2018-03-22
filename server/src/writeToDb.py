@@ -47,6 +47,7 @@ def writeNuts(recipe_href,kcal,eiweis,kohlenhydrate,fat,calcium,kalium,eisen,zin
     cursor.close();
     connection.commit()
 
+
 #Datensaetze auslesen
 #Removed for the sake of perfomance..
     """
