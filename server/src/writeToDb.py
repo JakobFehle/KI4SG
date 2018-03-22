@@ -69,4 +69,4 @@ def writeNuts(recipe_href,kcal,eiweis,kohlenhydrate,fat,calcium,kalium,eisen,zin
 #createTable()
 
 # Example of calling writeNuts, writing a recipe nutrition set to the previously made table
-writeNuts("/rezept/501707/Gefuellte-Zucchini-und-Paprika.html","1018.48","6029.25","11432.25","68.37","593.45","1311.09","6029.25","7639.2","139.6","3637.4","2679.93","766.98","164.625","621.76","38200.0","3194.5","2601.75","1578.35","1643.75","4.8")
+#writeNuts("/rezept/501707/Gefuellte-Zucchini-und-Paprika.html","1018.48","6029.25","11432.25","68.37","593.45","1311.09","6029.25","7639.2","139.6","3637.4","2679.93","766.98","164.625","621.76","38200.0","3194.5","2601.75","1578.35","1643.75","4.8")
