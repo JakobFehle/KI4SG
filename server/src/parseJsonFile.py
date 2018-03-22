@@ -15,7 +15,7 @@ class CompileJsons:
         self.__calcualteNutr()
         
     def __calcualteNutr(self):
-        with io.open(r"../../json/final_recipe_0to30000.json", encoding="utf-8") as json_file:
+        with io.open(r"../../json/testparse.json", encoding="utf-8") as json_file:
             self.jsonFile = json.load(json_file)
             for jsonData in self.jsonFile:
                 rezept = Rezept(jsonData)
