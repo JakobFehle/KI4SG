@@ -10,7 +10,7 @@ from findnutr import *
 
 def createTable():
     try:
-        connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="kochbar")
+        connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="newschema")
         print "Connection established!"
         try:
             cursor = connection.cursor()
@@ -39,7 +39,7 @@ def writeNuts(recipe_href,kcal,eiweis,kohlenhydrate,fat,calcium,kalium,eisen,zin
         exit(0)"""
     # Exception Handling remove for the sake of perfomance...
 
-    connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="kochbar")
+    connection = mysql.connector.connect(host="localhost", user="root", passwd="asdfgh", db="newschema")
 
  #Datensatz einfuegen
     cursor = connection.cursor()
