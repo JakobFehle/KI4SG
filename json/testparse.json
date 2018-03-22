@@ -1,6 +1,10 @@
 [
     {
 		"recipe_href" : "/rezept/368835/broetchenteig-ohne-mehl.html",
-		"ingredients_string" : "1 tüte:backpulver \n 100 gr.:eiweisspulver \n 175 gr.:frischkäse \n 30 gr.:leinsamen \n 3 stck.:eier"
+		"ingredients_string" : "1 tüte:backpulver \n 100 g:eiweisspulver \n 175 gr:frischkäse \n 30 g.:leinsamen \n 3 stueck:eier"
+	},
+    {
+		"recipe_href" : "/rezept/501707/Gefuellte-Zucchini-und-Paprika.html",
+		"ingredients_string" : "1:Zucchini \n 2:Paprika rot \n 200 g:Feta \n 250 g:Schinken \n optional für die Soße \n 1:Zwiebel frisch \n 300 g:Passierte Tomaten \n :Pfeffer \n :Salz \n :Majoran getrocknet"
 	}
 ]
