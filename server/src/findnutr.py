@@ -860,7 +860,6 @@ class Rezept:
                 self.zutaten.append(Rezepteintrag(zutat[0].lower().strip(),'',zutat[1].lower().strip()))
             else:
                 '1'
-    
     def returnJson(self):
     #Vitamin A, E, B1,B2,B6, B12,C
     #calcium, magenesiom, kalium, eisen, jod, zink, selen
@@ -889,6 +888,37 @@ class Rezept:
         result[u'linolensäure'] = self.naehrwerte['F183']
         result['kohlenhydrate'] = self.naehrwerte['ZK']
         result['ballaststoffe'] = self.naehrwerte['ZB']
+
+        return result
+    
+    def returnNutrArray(self):
+    #Vitamin A, E, B1,B2,B6, B12,C
+    #calcium, magenesiom, kalium, eisen, jod, zink, selen
+    #eiweiß, fett, linolsäure,linolensäure, kohlenhydrate, ballaststoffe
+        
+    
+        result = []
+        result.append(self.json['recipe_href'])
+        result.append(self.naehrwerte['GCAL'])
+        result.append(self.naehrwerte['ZE'])
+        result.append(self.naehrwerte['ZK'])
+        result.append(self.naehrwerte['ZF'])
+        result.append(self.naehrwerte['MCA'])
+        result.append(self.naehrwerte['MK'])
+        result.append(self.naehrwerte['MFE'])
+        result.append(self.naehrwerte['MZN'])
+        result.append(self.naehrwerte['MMG'])
+        result.append(self.naehrwerte['ZB'])
+        result.append(self.naehrwerte['F182'])
+        result.append(self.naehrwerte['F183'])
+        result.append(self.naehrwerte['MJ'])
+        result.append(self.naehrwerte['VA'])
+        result.append(self.naehrwerte['VC'])
+        result.append(self.naehrwerte['VE'])
+        result.append(self.naehrwerte['VB1'])
+        result.append(self.naehrwerte['VB2'])
+        result.append(self.naehrwerte['VB6'])
+        result.append(self.naehrwerte['VB12'])
 
         return result
     
