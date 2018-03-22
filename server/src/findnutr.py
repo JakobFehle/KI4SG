@@ -797,11 +797,11 @@ class Rezept:
        
 
     def __parseJson(self):
-        #Titel
-        if (self.json['title']!=""):
-            self.titel = self.json['title']
-        else:
-            self.titel = 'nicht gefunden'
+        ##Titel
+        #if (self.json['title']!=""):
+        #    self.titel = self.json['title']
+        #else:
+        #    self.titel = 'nicht gefunden'
 
         #URL
         if (self.json['recipe_href']!=""):
@@ -810,17 +810,17 @@ class Rezept:
             self.url='nicht gefunden'
 
         #Rezeptzubereitung
-        if (self.json['preparation_instructions']!=""):
-            self.beschreibung=self.json['preparation_instructions']
-        else:
-            self.beschreibung='nicht gefunden'
+        #if (self.json['preparation_instructions']!=""):
+        #    self.beschreibung=self.json['preparation_instructions']
+        #else:
+        #    self.beschreibung='nicht gefunden'
 
         #Zeit
-        self.zeit=0
-        if (self.json['duration']!=""):
-            self.zeit=self.json['duration']
-        else:
-            self.zeit='nicht gefunden'
+        #self.zeit=0
+        #if (self.json['duration']!=""):
+        #    self.zeit=self.json['duration']
+        #else:
+        #    self.zeit='nicht gefunden'
         
         #Zutaten
         self.zutatenRaw = []
