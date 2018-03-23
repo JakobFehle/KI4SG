@@ -1,0 +1,13 @@
+{
+    "name": "backend_db_API",
+    "version": "1.0.0",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~4.15.4",
+        "mysql": "~2.15.0",
+        "body-parser": "~1.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "~1.11.0"
+    }
+}
