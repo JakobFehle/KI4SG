@@ -9,7 +9,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('FRONTEND!');
+  res.send(dboutput);
 });
 
 app.listen(9009, function () {

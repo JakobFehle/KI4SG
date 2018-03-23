@@ -2,10 +2,18 @@
 //install via CMD "npm install mysql"
 
 var mysql = require('mysql');
+var express = require('express');
+var app = express();
+
+
+
+app.listen(9009, function () {
+  console.log('Server startet @localhost:9009');
+});
 
 var con = mysql.createConnection({
     host: "localhost",
-    database: "kochbar",
+    database: "newschema",
     user: "root",
     password: "asdfgh"
 });
@@ -18,11 +26,16 @@ con.connect(function(err) {
       
   };
   console.log("Connected to kochbar@localhost!");
-    con.query('SELECT * FROM kochbar.kochbar_analysis_recipe', (err,rows) =>
+    con.query('SELECT * FROM newschema.recipenuts LIMIT 1' , (err,rows) =>
              { if(err) throw err;
               
               console.log('Data received');
+              var dboutput = rows;
+              
               console.log(rows);
+              app.get('/', function (req, res) {
+                    res.send(rows);
+});
         
         
     })
