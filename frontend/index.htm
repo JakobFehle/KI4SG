@@ -1,11 +1,25 @@
 <html>
-   <body>
-      
-      <form action = "https//127.0.0.1:9009/process_get" method = "GET">
-         <br>
-         Recipe: <input type = "Recipe" name = "Recipe">
-         <input type = "submit" value = "Search">
-      </form>
-      
-   </body>
+
+<head>
+
+</head>
+
+<body>
+    <script src="ressources/js/app.js"></script>
+    <script src="ressources/js/viewcontroller.js"></script>
+    <script src="ressources/js/model.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            NutrFinder.init();
+        });
+
+    </script>
+    <form action="https//127.0.0.1:9009/process_get" method="GET">
+        <br> Recipe: <input type="Recipe" name="Recipe">
+        <input type="submit" value="Search">
+    </form>
+
+</body>
+
 </html>
