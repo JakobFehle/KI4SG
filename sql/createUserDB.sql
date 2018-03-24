@@ -21,5 +21,4 @@ CREATE TABLE `newschema`.`users` (
   `VitaminB2` VARCHAR(255) NULL,
   `VitaminB6` VARCHAR(255) NULL,
   `VitaminB12` VARCHAR(255) NULL,
-  `Date` DATETIME NULL,
- PRIMARY KEY (`UserID`));
+  `Date` DATETIME NULL);
