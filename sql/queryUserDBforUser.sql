@@ -1,0 +1,1 @@
+SELECT * FROM newschema.users WHERE UserID = '1';
