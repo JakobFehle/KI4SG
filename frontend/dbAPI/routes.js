@@ -11,11 +11,16 @@ module.exports = (function () {
     api.use(bodyParser.json());
 
 
-    api.get("/getUserInformation", function (req, res) {
-        var sqlQuery = 'SELECT * FROM newschema.users;';
-        console.log(sqlQuery);
+    api.get("/userInformation", function (req, res) {
+        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = "' + req.query.id + '";';
         db.query(sqlQuery, (err, rows) => {
-            if (err) console.log(err);
+            if (err) {
+                console.log(err);
+                res.json({
+                    "status": "error",
+                    "data": err
+                })
+            }
 
             res.json({
                 "status": "success",
@@ -25,27 +30,78 @@ module.exports = (function () {
         });
     });
 
-    api.put("/updateUserInformation", function (req, res) {
-        res.json({
-            "status": "success"
+    api.put("/userInformation", function (req, res) {
+        var sqlQuery1 = 'SELECT * FROM newschema.recipenuts WHERE RezeptID ="' + req.body.rezeptID + '";',
+            nuts;
+
+        db.query(sqlQuery1, (err, rows) => {
+            if (err) console.log(err)
+            nuts = rows[0];
+
+            var sqlQuery2 = 'INSERT INTO newschema.users(UserID,RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12,Date) VALUES("' +
+                req.body.userID + '","' +
+                nuts.RezeptID + '","' +
+                nuts.Kcal + '","' +
+                nuts.Eiweis + '","' +
+                nuts.Kohlenhydrate + '","' +
+                nuts.Fett + '","' +
+                nuts.Calcium + '","' +
+                nuts.Kalium + '","' +
+                nuts.Eisen + '","' +
+                nuts.Zink + '","' +
+                nuts.Magnesium + '","' +
+                nuts.Ballaststoffe + '","' +
+                nuts.Linolsaeure + '","' +
+                nuts.Linolensaeure + '","' +
+                nuts.Iodid + '","' +
+                nuts.VitaminA + '","' +
+                nuts.VitaminC + '","' +
+                nuts.VitaminE + '","' +
+                nuts.VitaminB1 + '","' +
+                nuts.VitaminB2 + '","' +
+                nuts.VitaminB6 + '","' +
+                nuts.VitaminB12 + '","' +
+                req.body.date + '");';
+
+            db.query(sqlQuery2, (err, rows) => {
+                if (err) {
+                    res.json({
+                        "status": "error",
+                        "sql": sqlQuery2,
+                        "data": err
+                    });
+                }
+                res.json({
+                    "data": "success"
+                });
+            });
         });
-        /*
-        INSERT INTO newschema.users(UserID, RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12) 
-        VALUES ('1','DavidsLeckerTomatenSupper','1200','5','4','9','9','1','2','22','12','2','12','21','2','21','21','21','21','21','21','2004-05-23T14:25:10');
-        */
     });
 
     api.get("/getRecipeInformation", function (req, res) {
+        //var sqlQuery = 'SELECT * FROM newschema.kochbar_recipes'
         res.json({
             "status": "success"
         });
     });
 
     api.get("/getNutrInformation", function (req, res) {
-        res.json({
-            "status": "success"
+        var sqlQuery = 'SELECT * FROM newschema.recipenuts WHERE RezeptID ="' + req.query.id + '";';
+        db.query(sqlQuery, (err, rows) => {
+            if (err) {
+                res.json({
+                    "status": "error",
+                    "data": err
+                });
+            }
+            res.json({
+                "status": "success",
+                "data": rows
+            });
         });
     });
 
     return api;
 })();
+
+//"/rezept/501707/Gefuellte-Zucchini-und-Paprika.html"

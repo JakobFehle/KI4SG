@@ -8,7 +8,7 @@ module.exports = (function () {
 
     var con = mysql.createConnection({
         host: "localhost",
-        database: "kochbar",
+        database: "newschema",
         user: "root",
         password: "asdfgh"
     });
