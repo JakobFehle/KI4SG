@@ -11,8 +11,13 @@ var express = require('express'),
     port = process.env.PORT || standardPort;
 
 
-app.get('/', function (req, res) {
-    res.send('FRONTEND!');
+app.use('/', function (req, res, next) {
+    "use strict";
+
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, PUT, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, X-Auth-Token");
+
     next();
 });
 

@@ -35,7 +35,7 @@ module.exports = (function () {
             nuts;
 
         db.query(sqlQuery1, (err, rows) => {
-            if (err) console.log(err)
+            if (err) console.log("yes" + err);
             nuts = rows[0];
 
             var sqlQuery2 = 'INSERT INTO newschema.users(UserID,RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12,Date) VALUES("' +
@@ -79,12 +79,62 @@ module.exports = (function () {
     });
 
     api.get("/getRecipeInformation", function (req, res) {
-        //var sqlQuery = 'SELECT * FROM newschema.kochbar_recipes'
-        res.json({
-            "status": "success"
+        var searchString = req.query.text,
+            searchStringArray = [],
+            sqlQuery = 'SELECT * FROM (SELECT * FROM newschema.recipenuts WHERE newschema.recipenuts.RezeptID LIKE "%';
+
+        searchString.replace("von", "");
+        searchString.replace("aus", "");
+        searchString.replace("mit", "");
+        searchString.replace("ohne", "");
+        searchString.replace("oder", "");
+        searchString.replace("und", "");
+        searchString.replace(";", "");
+        searchString.replace(":", "");
+        searchString.replace(",", "");
+        searchString.replace(".", "");
+        searchString.replace("\"", "");
+        searchString.replace("'", "");
+        searchString.replace("-", "");
+        searchString.replace("ä", "ae");
+        searchString.replace("ü", "ue");
+        searchString.replace("ö", "oe");
+        searchString.replace("Ä", "Ae");
+        searchString.replace("Ü", "Ue");
+        searchString.replace("Ö", "Oe");
+        searchString.replace("ß", "ss");
+
+        searchStringArray = searchString.split(/\s+/);
+        sqlQuery += searchStringArray[0] + '%"';
+
+        for (var i = 1; i < searchStringArray.length; i++) {
+            sqlQuery += ' AND newschema.recipenuts.RezeptID LIKE "%' + searchStringArray[i] + '%"';
+        }
+
+        sqlQuery += ' LIMIT 100) t1 inner join (SELECT title, zutaten, Schwierigkeitsgrad, Zubereitungszeit, recipe_href, numstars FROM newschema.kochbar_recipes WHERE newschema.kochbar_recipes.recipe_href LIKE "%' + searchStringArray[0] + '%"';
+
+        for (var i = 1; i < searchStringArray.length; i++) {
+            sqlQuery += ' AND newschema.kochbar_recipes.recipe_href LIKE "%' + searchStringArray[i] + '%"';
+        }
+
+        sqlQuery += ') t2 on t1.RezeptID = t2.recipe_href COLLATE utf8_unicode_ci;';
+
+        db.query(sqlQuery, (err, rows) => {
+            if (err) {
+                res.json({
+                    "status": "error",
+                    "data": err
+                });
+            }
+            res.json({
+                "status": "success",
+                "data": rows
+            });
         });
+
     });
 
+    /*
     api.get("/getNutrInformation", function (req, res) {
         var sqlQuery = 'SELECT * FROM newschema.recipenuts WHERE RezeptID ="' + req.query.id + '";';
         db.query(sqlQuery, (err, rows) => {
@@ -100,7 +150,7 @@ module.exports = (function () {
             });
         });
     });
-
+    */
     return api;
 })();
 

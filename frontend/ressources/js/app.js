@@ -3,14 +3,39 @@ var NutrFinder = NutrFinder || {};
 NutrFinder = (function () {
     "use strict";
 
-    const BACKEND_ADRESS = " http://127.0.0.1:9009/api/";
+    const BACKEND_ADRESS = "http://127.0.0.1:9009/api/";
 
-    var that = {};
+    var that = {},
+        model;
 
-    function init() {
 
+    function onRecipeSearchFinished(event) {
+        console.log(event.data);
     }
 
-    that.init = init
+    function onUserInformationRecieved(event) {
+        console.log(event.data);
+    }
+
+    function onUserDataUpdated(event) {
+        console.log(event.data);
+    }
+
+    function initModules() {
+        model = new NutrFinder.model(BACKEND_ADRESS);
+    }
+
+    function initListeners() {
+        model.addEventListener("userDataRecieved", onUserInformationRecieved);
+        model.addEventListener("userDataUpdated", onUserDataUpdated);
+        model.addEventListener("recipeSearchFinished", onRecipeSearchFinished);
+    }
+
+    function init() {
+        initModules();
+        initListeners();
+    }
+
+    that.init = init;
     return that;
 })();
