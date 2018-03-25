@@ -68,8 +68,10 @@ NutrFinder.model = function (backendAdress) {
 
 
     function init() {
+        that.getRecipeBySearch = getRecipeBySearch;
         that.getUserInformation = getUserInformation;
         that.updateUserInformation = updateUserInformation;
+
         return that;
     }
 

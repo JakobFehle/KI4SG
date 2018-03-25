@@ -6,8 +6,14 @@ NutrFinder = (function () {
     const BACKEND_ADRESS = "http://127.0.0.1:9009/api/";
 
     var that = {},
-        model;
+        model,
+        viewcontroller;
 
+
+    function onSearchButtonClicked(event) {
+        console.log(event.data);
+        model.getRecipeBySearch(event.data);
+    }
 
     function onRecipeSearchFinished(event) {
         console.log(event.data);
@@ -23,12 +29,19 @@ NutrFinder = (function () {
 
     function initModules() {
         model = new NutrFinder.model(BACKEND_ADRESS);
+        viewcontroller = new NutrFinder.viewcontroller({
+            searchButton: document.querySelector("#searchButton"),
+            searchField: document.querySelector("#searchField")
+        });
+
     }
 
     function initListeners() {
         model.addEventListener("userDataRecieved", onUserInformationRecieved);
         model.addEventListener("userDataUpdated", onUserDataUpdated);
         model.addEventListener("recipeSearchFinished", onRecipeSearchFinished);
+
+        viewcontroller.addEventListener("onSearchButtonClicked", onSearchButtonClicked);
     }
 
     function init() {

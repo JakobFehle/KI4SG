@@ -83,6 +83,7 @@ module.exports = (function () {
             searchStringArray = [],
             sqlQuery = 'SELECT * FROM (SELECT * FROM newschema.recipenuts WHERE newschema.recipenuts.RezeptID LIKE "%';
 
+        searchString.toLowerCase();
         searchString.replace("von", "");
         searchString.replace("aus", "");
         searchString.replace("mit", "");
@@ -99,10 +100,13 @@ module.exports = (function () {
         searchString.replace("ä", "ae");
         searchString.replace("ü", "ue");
         searchString.replace("ö", "oe");
-        searchString.replace("Ä", "Ae");
-        searchString.replace("Ü", "Ue");
-        searchString.replace("Ö", "Oe");
         searchString.replace("ß", "ss");
+        searchString.replace("drop", "");
+        searchString.replace("alter", "");
+        searchString.replace("*", "");
+        searchString.replace("select", "");
+        searchString.replace("table", "");
+        searchString.replace("where", "");
 
         searchStringArray = searchString.split(/\s+/);
         sqlQuery += searchStringArray[0] + '%"';
