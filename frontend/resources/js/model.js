@@ -4,9 +4,14 @@ var NutrFinder = NutrFinder || {},
 NutrFinder.model = function (backendAdress) {
     "use strict";
 
-    var that = new MMEventTarget();
+    var that = new MMEventTarget(),
+        userID;
 
-    function getUserInformation(userID) {
+    function setUserID(ID) {
+        userID = ID;
+    }
+
+    function getUserInformation() {
         $.ajax({
             method: "GET",
             url: backendAdress + "userInformation",
@@ -25,7 +30,7 @@ NutrFinder.model = function (backendAdress) {
         });
     }
 
-    function updateUserInformation(userID, rezeptID, date) {
+    function updateUserInformation(rezeptID, date) {
         $.ajax({
             method: "PUT",
             url: backendAdress + "userInformation",
@@ -71,7 +76,7 @@ NutrFinder.model = function (backendAdress) {
         that.getRecipeBySearch = getRecipeBySearch;
         that.getUserInformation = getUserInformation;
         that.updateUserInformation = updateUserInformation;
-
+        that.setUserID = setUserID;
         return that;
     }
 

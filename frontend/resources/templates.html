@@ -24,7 +24,14 @@
             <%}%>
                 <div class="listItem" id="<%=item.RezeptID%>">
                     <a href="#" class="list-group-item">
-                        <div><span><%= item.zutaten%></span></div>
+                        <div>Titel:</div>
+                        <div class="listItemTitle">
+                            <%= item.title%>
+                        </div>
+                        <div>Zutaten:</div>
+                        <div>
+                            <%= item.zutaten%>
+                        </div>
 
                     </a>
                 </div>
@@ -50,4 +57,24 @@
                 <%}%>
         </ul>
     </nav>
+</script>
+<script type="text/template" class="template-modal">
+    <!-- Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLongTitle">Bestätigung erforderlich</h5>
+                </div>
+                <div class="modal-body">
+                    Möchten Sie dieses Rezept zu ihrer Historie hinzufügen?
+                    <div class="modalRecipeTitle"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+                    <button type="button" class="btn btn-primary">Hinzufügen</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </script>

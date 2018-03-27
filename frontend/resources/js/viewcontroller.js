@@ -7,13 +7,38 @@ NutrFinder.viewcontroller = function (options) {
     var that = new MMEventTarget(),
         templateSearchBar,
         templateListItem,
-        templatePagination;
+        templatePagination,
+        templateModal;
 
     function onSearchButtonClicked() {
         that.dispatchEvent({
             type: "onSearchButtonClicked",
             data: options.searchBarElement.querySelector("#searchField").value
         });
+    }
+
+    function activateModal(item) {
+        $('#confirmationModal').modal('show');
+        options.modalElement.querySelector(".modalRecipeTitle").innerHTML = item.title;
+        options.modalElement.querySelector(".modalRecipeTitle").id = item.id;
+    }
+
+    function onModalAbort() {
+        $('#confirmationModal').modal('hide');
+    }
+
+    function onModalConfirm() {
+        $('#confirmationModal').modal('hide');
+        that.dispatchEvent({
+            type: "onItemSelectionConfirmed",
+            data: options.modalElement.querySelector(".modalRecipeTitle").id
+        });
+    }
+
+    function createModal() {
+        options.modalElement.innerHTML = templateModal();
+        options.modalElement.querySelector(".btn-secondary").addEventListener("click", onModalAbort);
+        options.modalElement.querySelector(".btn-primary").addEventListener("click", onModalConfirm);
     }
 
     function createSearchBar() {
@@ -55,7 +80,16 @@ NutrFinder.viewcontroller = function (options) {
     }
 
     function onItemSelected(event) {
-        console.log(event.target.closest(".listItem").id);
+        console.log(event.target);
+        console.log($(event.target).closest(".list-group-item").find(".listItemTitle"));
+        console.log($(event.target).closest(".list-group-item"));
+        that.dispatchEvent({
+            type: "onItemClicked",
+            data: {
+                id: event.target.closest(".listItem").id,
+                title: $(event.target).closest(".list-group-item").find(".listItemTitle").text()
+            }
+        });
     }
 
     function wireGUIListener() {
@@ -76,7 +110,12 @@ NutrFinder.viewcontroller = function (options) {
         templateSearchBar = _.template(options.searchBarTemplate);
         templateListItem = _.template(options.listItemTemplate);
         templatePagination = _.template(options.paginationTemplate);
+        templateModal = _.template(options.modalTemplate);
+
         createSearchBar();
+        createModal();
+
+        that.activateModal = activateModal;
         that.updateListView = updateListView;
         return that;
     }
