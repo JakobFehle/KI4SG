@@ -17,37 +17,27 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <span class="input-group-btn">
-        <button class="btn btn-default" type="button" id="searchButton">Go!</button>
-      </span>
-                    <input type="text" class="form-control" placeholder="Hier Rezept eingeben." id="searchField">
-                </div>
-                <!-- /input-group -->
-            </div>
-            <!-- /.col-lg-6 -->
-        </div>
+    <div class="content-wrapper">
+        <section class="content">
+            <div id="screenSearchBar"></div>
+            <div id="screenSearchResults"></div>
+            <div id="screenPagination"></div>
+        </section>
     </div>
-
-
-
-
-
-
 
     <script src="libs/js/underscore-min.js"></script>
     <script src="vendors/events.js"></script>
-    <script src="ressources/js/app.js"></script>
-    <script src="ressources/js/viewcontroller.js"></script>
-    <script src="ressources/js/model.js"></script>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/viewcontroller.js"></script>
+    <script src="resources/js/model.js"></script>
+
+    <div id="templates"></div>
 
     <script>
-        $(document).ready(function() {
-            NutrFinder.init();
+        $("#templates").load("resources/templates.html", function(response, status, xhr) {
+            if (status != "error") {
+                NutrFinder.init("#templates");
+            }
         });
 
     </script>

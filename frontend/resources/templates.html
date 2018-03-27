@@ -1,0 +1,53 @@
+<script type="text/template" class="template-create-SearchBar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="searchButton">Go!</button>
+                            </span>
+                    <input type="text" class="form-control" placeholder="Hier Rezept eingeben." id="searchField">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+    </div>
+</script>
+<script type="text/template" class="template-create-ListView">
+    <div class="list-group">
+        <div class="newPage" id="page1">
+            <% _.each(items, function(item, index) {
+            if ((index != 0) && (index % 10 == 0)) {%>
+        </div>
+        <div class="newPage" style="display:none" id="page<%= (index/10)+1%>">
+            <%}%>
+                <div class="listItem" id="<%=item.RezeptID%>">
+                    <a href="#" class="list-group-item">
+                        <div><span><%= item.zutaten%></span></div>
+
+                    </a>
+                </div>
+                <%});%>
+        </div>
+    </div>
+</script>
+<script type="text/template" class="template-pagination">
+    <nav aria-label="pagination">
+        <ul class="pagination pg-blue justify-content-center">
+            <li class="page-item active">
+                <a class="page-link" href="#page1" id="pagination1">
+                        1
+                    </a>
+            </li>
+
+            <% for(var i = 1; i < count;i++) {%>
+                <li class="page-item">
+                    <a class="page-link" href="#page<%=(i+1)%>" id="pagination<%=(i+1)%>">
+                        <%=(i+1)%>
+                    </a>
+                </li>
+                <%}%>
+        </ul>
+    </nav>
+</script>

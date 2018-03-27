@@ -7,7 +7,8 @@ NutrFinder = (function () {
 
     var that = {},
         model,
-        viewcontroller;
+        viewcontroller,
+        templateContainer;
 
 
     function onSearchButtonClicked(event) {
@@ -16,6 +17,7 @@ NutrFinder = (function () {
     }
 
     function onRecipeSearchFinished(event) {
+        viewcontroller.updateListView(event.data.data);
         console.log(event.data);
     }
 
@@ -30,8 +32,12 @@ NutrFinder = (function () {
     function initModules() {
         model = new NutrFinder.model(BACKEND_ADRESS);
         viewcontroller = new NutrFinder.viewcontroller({
-            searchButton: document.querySelector("#searchButton"),
-            searchField: document.querySelector("#searchField")
+            searchBarElement: document.querySelector("#screenSearchBar"),
+            searchBarTemplate: document.querySelector(templateContainer + " .template-create-SearchBar").innerHTML,
+            listItemElement: document.querySelector("#screenSearchResults"),
+            listItemTemplate: document.querySelector(templateContainer + " .template-create-ListView").innerHTML,
+            paginationElement: document.querySelector("#screenPagination"),
+            paginationTemplate: document.querySelector(templateContainer + " .template-pagination").innerHTML
         });
 
     }
@@ -44,7 +50,8 @@ NutrFinder = (function () {
         viewcontroller.addEventListener("onSearchButtonClicked", onSearchButtonClicked);
     }
 
-    function init() {
+    function init(templateContainerID) {
+        templateContainer = templateContainerID;
         initModules();
         initListeners();
     }
