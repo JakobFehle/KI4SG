@@ -30,13 +30,12 @@ NutrFinder.model = function (backendAdress) {
         });
     }
 
-    function updateUserInformation(rezeptID, date) {
+    function updateUserInformation(rezeptID) {
         $.ajax({
             method: "PUT",
             url: backendAdress + "userInformation",
             data: JSON.stringify({
                 "userID": userID,
-                "date": date,
                 "rezeptID": rezeptID
             }),
             dataType: "json",

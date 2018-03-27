@@ -5,7 +5,7 @@ NutrFinder.viewcontroller = function (options) {
     "use strict";
 
     var that = new MMEventTarget(),
-        templateSearchBar,
+        templateNavBar,
         templateListItem,
         templatePagination,
         templateModal;
@@ -13,7 +13,7 @@ NutrFinder.viewcontroller = function (options) {
     function onSearchButtonClicked() {
         that.dispatchEvent({
             type: "onSearchButtonClicked",
-            data: options.searchBarElement.querySelector("#searchField").value
+            data: options.navBarElement.querySelector("#searchField").value
         });
     }
 
@@ -41,17 +41,41 @@ NutrFinder.viewcontroller = function (options) {
         options.modalElement.querySelector(".btn-primary").addEventListener("click", onModalConfirm);
     }
 
-    function createSearchBar() {
-        options.searchBarElement.innerHTML = templateSearchBar();
-        options.searchBarElement.querySelector("#searchButton").addEventListener("click", onSearchButtonClicked);
+    function onNavUserButtonClicked(event) {
+        $(event.target).closest('.navbar-nav').find('.active').toggleClass('active');
+        event.target.parentElement.classList.toggle('active');
+        resetVisability();
+        that.dispatchEvent({
+            type: "onNavUserButtonClicked"
+        });
+    }
+
+    function onNavSearchResultsClicked(event) {
+        $(event.target).closest('.navbar-nav').find('.active').toggleClass('active');
+        event.target.parentElement.classList.toggle('active');
+        resetVisability();
+        options.paginationElement.style.display = "block";
+        options.listItemElement.style.display = "block";
+    }
+
+    function createNavBar() {
+        options.navBarElement.innerHTML = templateNavBar();
+        options.navBarElement.querySelector("#searchButton").addEventListener("click", onSearchButtonClicked);
+        options.navBarElement.querySelector("#navBarUserButton").addEventListener("click", onNavUserButtonClicked);
+        options.navBarElement.querySelector("#navBarSearchResultsButton").addEventListener("click", onNavSearchResultsClicked);
+    }
+
+    function resetPageVisability() {
+        _.each(options.listItemElement.querySelectorAll('.newPage'), function (page) {
+            page.style.display = "none";
+        });
+        options.userInformationElement.innerHTML = null;
     }
 
     function resetVisability() {
-        var pages = options.listItemElement.querySelectorAll('.newPage');
-
-        _.each(pages, function (page) {
-            page.style.display = "none";
-        })
+        options.paginationElement.style.display = "none";
+        options.listItemElement.style.display = "none";
+        options.userInformationElement.style.display = "none";
     }
 
     function updateListView(listItems) {
@@ -80,9 +104,6 @@ NutrFinder.viewcontroller = function (options) {
     }
 
     function onItemSelected(event) {
-        console.log(event.target);
-        console.log($(event.target).closest(".list-group-item").find(".listItemTitle"));
-        console.log($(event.target).closest(".list-group-item"));
         that.dispatchEvent({
             type: "onItemClicked",
             data: {
@@ -107,12 +128,12 @@ NutrFinder.viewcontroller = function (options) {
     }
 
     function init() {
-        templateSearchBar = _.template(options.searchBarTemplate);
+        templateNavBar = _.template(options.navBarTemplate);
         templateListItem = _.template(options.listItemTemplate);
         templatePagination = _.template(options.paginationTemplate);
         templateModal = _.template(options.modalTemplate);
 
-        createSearchBar();
+        createNavBar();
         createModal();
 
         that.activateModal = activateModal;

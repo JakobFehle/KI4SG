@@ -61,7 +61,7 @@ module.exports = (function () {
                 nuts.VitaminB2 + '","' +
                 nuts.VitaminB6 + '","' +
                 nuts.VitaminB12 + '","' +
-                req.body.date + '");';
+                new Date().toISOString().slice(0, 19).replace('T', ' ') + '");';
 
             db.query(sqlQuery2, (err, rows) => {
                 if (err) {

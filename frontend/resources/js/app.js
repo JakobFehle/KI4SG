@@ -36,20 +36,22 @@ NutrFinder = (function () {
     }
 
     function onItemSelectionConfirmed(event) {
-        model.updateUserInformation(event.data, new Date().toISOString().slice(0, 19).replace('T', ' '));
+        model.updateUserInformation(event.data);
     }
 
     function initModules() {
         model = new NutrFinder.model(BACKEND_ADRESS);
         viewcontroller = new NutrFinder.viewcontroller({
-            searchBarElement: document.querySelector("#screenSearchBar"),
-            searchBarTemplate: document.querySelector(templateContainer + " .template-create-SearchBar").innerHTML,
+            navBarElement: document.querySelector("#screenNavBar"),
+            navBarTemplate: document.querySelector(templateContainer + " .template-navbar").innerHTML,
             listItemElement: document.querySelector("#screenSearchResults"),
             listItemTemplate: document.querySelector(templateContainer + " .template-create-ListView").innerHTML,
             paginationElement: document.querySelector("#screenPagination"),
             paginationTemplate: document.querySelector(templateContainer + " .template-pagination").innerHTML,
             modalElement: document.querySelector("#screenModal"),
-            modalTemplate: document.querySelector(templateContainer + " .template-modal").innerHTML
+            modalTemplate: document.querySelector(templateContainer + " .template-modal").innerHTML,
+            userInformationElement: document.querySelector("#screenUserInformation"),
+            userInformationTemplate: document.querySelector(templateContainer + " .template-userInformation").innerHTML
         });
 
     }
