@@ -1,0 +1,4 @@
+132.199.138.79@bratwurstconfiture
+
+
+mysql --user="kochbar" --database="kochbar" --password="r5Hn7WhX9eROFiKT" < "createRefDB.sql"
