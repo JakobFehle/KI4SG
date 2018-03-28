@@ -12,24 +12,36 @@ module.exports = (function () {
 
 
     api.get("/userInformation", function (req, res) {
-        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = "' + req.query.id + '";';
-        db.query(sqlQuery, (err, rows) => {
+        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = "' + req.query.id + '" AND Date = "' + new Date().toISOString().slice(0, 19).replace('T', ' ') + '";';
+        db.query(sqlQuery, (err, nutritions) => {
             if (err) {
                 console.log(err);
                 res.json({
                     "status": "error",
                     "data": err
-                })
+                });
             }
+            var sqlQuery2 = 'SELECT * FROM newschema.referencenuts WHERE Geschlecht = "' + req.query.sex + '" AND newschema.referencenuts.Alter_Obergrenze > ' + req.query.age + ' AND newschema.referencenuts.Alter_Untergrenze <= ' + req.query.age + ' LIMIT 1;'
 
-            res.json({
-                "status": "success",
-                "data": rows
+            db.query(sqlQuery2, (err, nutritionsRef) => {
+                if (err) {
+                    console.log(err);
+                    res.json({
+                        "status": "error",
+                        "data": err
+                    });
+                }
+                res.json({
+                    "status": "success",
+                    "data": {
+                        nutrs: nutritions,
+                        nutrRef: nutritionsRef
+                    }
+                });
+
             });
-
         });
     });
-
     api.put("/userInformation", function (req, res) {
         var sqlQuery1 = 'SELECT * FROM newschema.recipenuts WHERE RezeptID ="' + req.body.rezeptID + '";',
             nuts;
