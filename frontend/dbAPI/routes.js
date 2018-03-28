@@ -12,7 +12,8 @@ module.exports = (function () {
 
 
     api.get("/userInformation", function (req, res) {
-        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = "' + req.query.id + '" AND Date = "' + new Date().toISOString().slice(0, 19).replace('T', ' ') + '";';
+        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = "' + req.query.id + '" AND Date LIKE "' + new Date().toISOString().slice(0, 10).replace('T', ' ') + ' %";';
+        console.log(sqlQuery);
         db.query(sqlQuery, (err, nutritions) => {
             if (err) {
                 console.log(err);

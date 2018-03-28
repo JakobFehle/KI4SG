@@ -8,7 +8,14 @@ NutrFinder.viewcontroller = function (options) {
         templateNavBar,
         templateListItem,
         templatePagination,
-        templateModal;
+        templateModal,
+        templateUserInformation;
+
+
+    function createUserInformation(userInformation) {
+        options.userInformationElement.innerHTML = templateUserInformation(userInformation);
+        options.userInformationElement.style.display = "block";
+    }
 
     function onSearchButtonClicked() {
         onNavSearchResultsClicked(); // Visability
@@ -125,7 +132,6 @@ NutrFinder.viewcontroller = function (options) {
         _.each(listItems, function (item) {
             item.addEventListener("click", onItemSelected);
         });
-
     }
 
     function init() {
@@ -133,10 +139,12 @@ NutrFinder.viewcontroller = function (options) {
         templateListItem = _.template(options.listItemTemplate);
         templatePagination = _.template(options.paginationTemplate);
         templateModal = _.template(options.modalTemplate);
+        templateUserInformation = _.template(options.userInformationTemplate);
 
         createNavBar();
         createModal();
 
+        that.createUserInformation = createUserInformation;
         that.activateModal = activateModal;
         that.updateListView = updateListView;
         return that;

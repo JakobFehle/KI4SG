@@ -44,7 +44,8 @@ NutrFinder = (function () {
     }
 
     function onUserInformationRecieved(userInformation) {
-        console.log(userInformation);
+        console.log(userInformation.data.data);
+        viewcontroller.createUserInformation(userInformation.data.data);
     }
 
     function initModules() {
@@ -68,7 +69,6 @@ NutrFinder = (function () {
         model.addEventListener("userDataRecieved", onUserInformationRecieved);
         model.addEventListener("userDataUpdated", onUserDataUpdated);
         model.addEventListener("recipeSearchFinished", onRecipeSearchFinished);
-        model.addEventListener("userDataRecieved", onUserInformationRecieved);
 
 
         viewcontroller.addEventListener("onSearchButtonClicked", onSearchButtonClicked);
