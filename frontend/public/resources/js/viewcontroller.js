@@ -87,10 +87,12 @@ NutrFinder.viewcontroller = function (options) {
     }
 
     function updateListView(listItems) {
-        //        for (var i = 0; i < listItems.length; i++) {
-        //            listItems[i].zutaten = listItems[i].zutaten.replace(/[ 0-9.]+[a-zA-Züäö ]*(\:)/gi, " ");
-        //            listItems[i].zutaten = listItems[i].zutaten.replace(/([\n])/g, ",");
-        //        }
+        for (var i = 0; i < listItems.length; i++) {
+            //                    listItems[i].zutaten = listItems[i].zutaten.replace(/[ 0-9.]+[a-zA-Züäö ]*(\:)/gi, " ");
+            //                    listItems[i].zutaten = listItems[i].zutaten.replace(/([\n])/g, ",");
+            listItems[i].zutaten = listItems[i].zutaten.replace(/[:]/g, " ");
+            listItems[i].zutaten = listItems[i].zutaten.replace(/[\n]/g, ";");
+        }
 
         options.listItemElement.innerHTML = templateListItem({
             items: listItems

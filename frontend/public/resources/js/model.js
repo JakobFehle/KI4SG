@@ -98,6 +98,11 @@ NutrFinder.model = function (backendAdress) {
                 }
                 res.data.nutrs = placeholder;
             }
+            for (var index in res.data.nutrs) {
+                res.data.nutrs[index] = Math.round(res.data.nutrs[index] * 100) / 100;
+            }
+
+
             that.dispatchEvent({
                 type: "userDataRecieved",
                 data: res
