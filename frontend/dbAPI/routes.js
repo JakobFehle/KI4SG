@@ -50,30 +50,30 @@ module.exports = (function () {
         db.query(sqlQuery1, (err, rows) => {
             if (err) console.log("yes" + err);
             nuts = rows[0];
-
+            console.log(parseFloat(nuts.Kcal), req.body.propsEaten);
             var sqlQuery2 = 'INSERT INTO newschema.users(UserID,RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12,Date) VALUES("' +
                 req.body.userID + '","' +
                 nuts.RezeptID + '","' +
-                nuts.Kcal + '","' +
-                nuts.Eiweis + '","' +
-                nuts.Kohlenhydrate + '","' +
-                nuts.Fett + '","' +
-                nuts.Calcium + '","' +
-                nuts.Kalium + '","' +
-                nuts.Eisen + '","' +
-                nuts.Zink + '","' +
-                nuts.Magnesium + '","' +
-                nuts.Ballaststoffe + '","' +
-                nuts.Linolsaeure + '","' +
-                nuts.Linolensaeure + '","' +
-                nuts.Iodid + '","' +
-                nuts.VitaminA + '","' +
-                nuts.VitaminC + '","' +
-                nuts.VitaminE + '","' +
-                nuts.VitaminB1 + '","' +
-                nuts.VitaminB2 + '","' +
-                nuts.VitaminB6 + '","' +
-                nuts.VitaminB12 + '","' +
+                (parseFloat(nuts.Kcal) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Eiweis) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Kohlenhydrate) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Fett) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Calcium) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Kalium) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Eisen) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Zink) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Magnesium) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Ballaststoffe) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Linolsaeure) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Linolensaeure) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.Iodid) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminA) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminC) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminE) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminB1) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminB2) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminB6) * parseFloat(req.body.propsEaten)) + '","' +
+                (parseFloat(nuts.VitaminB12) * parseFloat(req.body.propsEaten)) + '","' +
                 new Date().toISOString().slice(0, 19).replace('T', ' ') + '");';
 
             db.query(sqlQuery2, (err, rows) => {
@@ -128,7 +128,7 @@ module.exports = (function () {
             sqlQuery += ' AND newschema.recipenuts.RezeptID LIKE "%' + searchStringArray[i] + '%"';
         }
 
-        sqlQuery += ' LIMIT 100) t1 inner join (SELECT title, zutaten, Schwierigkeitsgrad, Zubereitungszeit, recipe_href, numstars FROM newschema.kochbar_recipes WHERE newschema.kochbar_recipes.recipe_href LIKE "%' + searchStringArray[0] + '%"';
+        sqlQuery += ' LIMIT 100) t1 inner join (SELECT title, zutaten, furPersonen, Schwierigkeitsgrad, Zubereitungszeit, recipe_href, numstars FROM newschema.kochbar_recipes WHERE newschema.kochbar_recipes.recipe_href LIKE "%' + searchStringArray[0] + '%"';
 
         for (var i = 1; i < searchStringArray.length; i++) {
             sqlQuery += ' AND newschema.kochbar_recipes.recipe_href LIKE "%' + searchStringArray[i] + '%"';

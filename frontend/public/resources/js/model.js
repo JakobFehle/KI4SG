@@ -75,26 +75,26 @@ NutrFinder.model = function (backendAdress) {
                 placeholder.VitaminE = 0;
                 placeholder.Zink = 0;
                 for (var i = 0; i < res.data.nutrs.length; i++) {
-                    placeholder.Kcal += parseInt(res.data.nutrs[i].Kcal);
-                    placeholder.Ballaststoffe += parseInt(res.data.nutrs[i].Ballaststoffe) / 1000; //transform to g
-                    placeholder.Calcium += parseInt(res.data.nutrs[i].Calcium);
-                    placeholder.Eisen += parseInt(res.data.nutrs[i].Eisen) / 1000; // transform to mg
-                    placeholder.Eiweis += parseInt(res.data.nutrs[i].Eiweis) / 1000; // to g
-                    placeholder.Fett += parseInt(res.data.nutrs[i].Fett) / 1000; // to g
-                    placeholder.Iodid += parseInt(res.data.nutrs[i].Iodid);
-                    placeholder.Kalium += parseInt(res.data.nutrs[i].Kalium);
-                    placeholder.Kohlenhydrate += parseInt(res.data.nutrs[i].Kohlenhydrate) / 1000; // to g
-                    placeholder.Linolsaeure += parseInt(res.data.nutrs[i].Linolsaeure);
-                    placeholder.Linolensaeure += parseInt(res.data.nutrs[i].Linolensaeure);
-                    placeholder.Magnesium += parseInt(res.data.nutrs[i].Magnesium);
-                    placeholder.VitaminA += parseInt(res.data.nutrs[i].VitaminA) / 1000; // to mg
-                    placeholder.VitaminB1 += parseInt(res.data.nutrs[i].VitaminB1) / 1000; // to mg
-                    placeholder.VitaminB2 += parseInt(res.data.nutrs[i].VitaminB2) / 1000; // to mg
-                    placeholder.VitaminB6 += parseInt(res.data.nutrs[i].VitaminB6) / 1000; // to mg
-                    placeholder.VitaminB12 += parseInt(res.data.nutrs[i].VitaminB12);
-                    placeholder.VitaminC += parseInt(res.data.nutrs[i].VitaminC) / 1000; // to mg
-                    placeholder.VitaminE += parseInt(res.data.nutrs[i].VitaminE) / 1000; // to mg
-                    placeholder.Zink += parseInt(res.data.nutrs[i].Zink) / 1000; // to mg
+                    placeholder.Kcal += parseFloat(res.data.nutrs[i].Kcal);
+                    placeholder.Ballaststoffe += parseFloat(res.data.nutrs[i].Ballaststoffe) / 1000; //transform to g
+                    placeholder.Calcium += parseFloat(res.data.nutrs[i].Calcium);
+                    placeholder.Eisen += parseFloat(res.data.nutrs[i].Eisen) / 1000; // transform to mg
+                    placeholder.Eiweis += parseFloat(res.data.nutrs[i].Eiweis) / 1000; // to g
+                    placeholder.Fett += parseFloat(res.data.nutrs[i].Fett) / 1000; // to g
+                    placeholder.Iodid += parseFloat(res.data.nutrs[i].Iodid);
+                    placeholder.Kalium += parseFloat(res.data.nutrs[i].Kalium);
+                    placeholder.Kohlenhydrate += parseFloat(res.data.nutrs[i].Kohlenhydrate) / 1000; // to g
+                    placeholder.Linolsaeure += parseFloat(res.data.nutrs[i].Linolsaeure);
+                    placeholder.Linolensaeure += parseFloat(res.data.nutrs[i].Linolensaeure);
+                    placeholder.Magnesium += parseFloat(res.data.nutrs[i].Magnesium);
+                    placeholder.VitaminA += parseFloat(res.data.nutrs[i].VitaminA) / 1000; // to mg
+                    placeholder.VitaminB1 += parseFloat(res.data.nutrs[i].VitaminB1) / 1000; // to mg
+                    placeholder.VitaminB2 += parseFloat(res.data.nutrs[i].VitaminB2) / 1000; // to mg
+                    placeholder.VitaminB6 += parseFloat(res.data.nutrs[i].VitaminB6) / 1000; // to mg
+                    placeholder.VitaminB12 += parseFloat(res.data.nutrs[i].VitaminB12);
+                    placeholder.VitaminC += parseFloat(res.data.nutrs[i].VitaminC) / 1000; // to mg
+                    placeholder.VitaminE += parseFloat(res.data.nutrs[i].VitaminE) / 1000; // to mg
+                    placeholder.Zink += parseFloat(res.data.nutrs[i].Zink) / 1000; // to mg
                 }
                 res.data.nutrs = placeholder;
             }
@@ -112,13 +112,14 @@ NutrFinder.model = function (backendAdress) {
         });
     }
 
-    function updateUserInformation(rezeptID) {
+    function updateUserInformation(rezeptID, proportionsEaten) {
         $.ajax({
             method: "PUT",
             url: backendAdress + "userInformation",
             data: JSON.stringify({
                 "userID": userID,
-                "rezeptID": rezeptID
+                "rezeptID": rezeptID,
+                "propsEaten": proportionsEaten
             }),
             dataType: "json",
             contentType: "application/json",

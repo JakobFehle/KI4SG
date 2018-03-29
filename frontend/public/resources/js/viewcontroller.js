@@ -29,6 +29,7 @@ NutrFinder.viewcontroller = function (options) {
         $('#confirmationModal').modal('show');
         options.modalElement.querySelector(".modalRecipeTitle").innerHTML = item.title;
         options.modalElement.querySelector(".modalRecipeTitle").id = item.id;
+        options.modalElement.querySelector(".modalRecipeServings").innerHTML = item.servings;
     }
 
     function onModalAbort() {
@@ -37,9 +38,13 @@ NutrFinder.viewcontroller = function (options) {
 
     function onModalConfirm() {
         $('#confirmationModal').modal('hide');
+        var proportionsEaten = parseInt($(options.modalElement).find("option:selected").val()) / parseInt(options.modalElement.querySelector('.modalRecipeServings').innerHTML);
         that.dispatchEvent({
             type: "onItemSelectionConfirmed",
-            data: options.modalElement.querySelector(".modalRecipeTitle").id
+            data: {
+                id: options.modalElement.querySelector(".modalRecipeTitle").id,
+                propsEaten: proportionsEaten
+            }
         });
     }
 
@@ -118,7 +123,8 @@ NutrFinder.viewcontroller = function (options) {
             type: "onItemClicked",
             data: {
                 id: event.target.closest(".listItem").id,
-                title: $(event.target).closest(".list-group-item").find(".listItemTitle").text()
+                title: $(event.target).closest(".list-group-item").find(".listItemTitle").text(),
+                servings: $(event.target).closest(".list-group-item").find(".listItemServings").text()
             }
         });
     }

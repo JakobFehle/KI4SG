@@ -8,7 +8,8 @@ const standardPort = 9009;
 var express = require('express'),
     api = require("./routes.js"),
     app = express(),
-    port = process.env.PORT || standardPort;
+    port = process.env.PORT || standardPort,
+    path = require('path');
 
 
 app.use('/', function (req, res, next) {
@@ -21,7 +22,14 @@ app.use('/', function (req, res, next) {
     next();
 });
 
+app.use(express.static(path.resolve('../public/')));
+
+app.get('/', function (req, res) {
+    res.sendfile(path.resolve('../public/index.htm'));
+});
+
 app.use("/api", api);
+
 app.listen(port, function () {
     console.log('Server startet @localhost:9009');
 });

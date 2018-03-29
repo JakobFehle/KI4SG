@@ -31,12 +31,13 @@ NutrFinder = (function () {
     function onItemClicked(event) {
         viewcontroller.activateModal({
             id: event.data.id,
-            title: event.data.title
+            title: event.data.title,
+            servings: event.data.servings
         });
     }
 
     function onItemSelectionConfirmed(event) {
-        model.updateUserInformation(event.data);
+        model.updateUserInformation(event.data.id, event.data.propsEaten);
     }
 
     function onNavUserButtonClicked() {

@@ -16,7 +16,10 @@
                         <div>
                             <%= item.zutaten%>
                         </div>
-
+                        <div>Portionen:</div>
+                        <div class="listItemServings">
+                            <%= item.furPersonen %>
+                        </div>
                     </a>
                 </div>
                 <%});%>
@@ -53,6 +56,14 @@
                 <div class="modal-body">
                     Möchten Sie dieses Rezept zu ihrer Historie hinzufügen?
                     <div class="modalRecipeTitle"></div>
+                    Dieses Rezept wurde vom Verfasser für <span class="modalRecipeServings"></span> Portionen ausgelegt.
+                    <label for="sel1">Select list:</label>
+                    <select class="selectpicker show-menu-arrow" id="sel1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
