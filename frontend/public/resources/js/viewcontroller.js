@@ -114,7 +114,13 @@ NutrFinder.viewcontroller = function (options) {
     }
 
     function onPageSelected(event) {
-        resetVisability()
+        resetPageVisability();
+        options.paginationElement.querySelector('.active').classList.remove('active');
+        if (event.target.tagName == 'A') {
+            event.target.parentElement.classList.add('active');
+        } else {
+            event.target.classList.add('active');
+        }
         options.listItemElement.querySelector('#page' + $.trim(event.target.firstChild.data)).style.display = "block";
     }
 
