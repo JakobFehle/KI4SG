@@ -17,15 +17,10 @@ NutrFinder = (function () {
 
     function onRecipeSearchFinished(event) {
         viewcontroller.updateListView(event.data.data);
-        console.log(event.data);
-    }
-
-    function onUserInformationRecieved(event) {
-        console.log(event.data);
     }
 
     function onUserDataUpdated(event) {
-        console.log(event.data);
+        // notification
     }
 
     function onItemClicked(event) {
@@ -45,7 +40,6 @@ NutrFinder = (function () {
     }
 
     function onUserInformationRecieved(userInformation) {
-        console.log(userInformation.data.data);
         viewcontroller.createUserInformation(userInformation.data.data);
     }
 

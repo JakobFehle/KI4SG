@@ -1,44 +1,226 @@
 <script type="text/template" class="template-create-ListView">
     <div class="navbar-padding"></div>
-    <div class="list-group">
-        <div class="newPage" id="page1">
-            <% _.each(items, function(item, index) {
-            if ((index != 0) && (index % 10 == 0)) {%>
-        </div>
-        <div class="newPage" style="display:none" id="page<%= (index/10)+1%>">
-            <%}%>
-                <div class="listItem" id="<%=item.RezeptID%>">
-                    <a href="#" class="list-group-item">
-                        <div>Titel:</div>
-                        <div class="listItemTitle">
-                            <%= item.title%>
-                        </div>
-                        <div>Zutaten:</div>
-                        <div>
-                            <%= item.zutaten%>
-                        </div>
-                        <div>Portionen:</div>
-                        <div class="listItemServings">
-                            <%= item.furPersonen %>
-                        </div>
-                    </a>
+    <div class="container">
+        <div class="row">
+            <div class="list-group col">
+                <div class="newPage" id="page1">
+                    <% _.each(items, function(item, index) {
+                        if ((index != 0) && (index % 10 == 0)) {%>
                 </div>
-                <%});%>
+                <div class="newPage" style="display:none" id="page<%= (index/10)+1%>">
+                    <%}%>
+                        <div class="listItem" id="<%=item.RezeptID%>">
+                            <a href="#" class="list-group-item">
+                                <div class="row row-item-title">
+                                    <div class="col-2">
+                                        <h2 class="item-key">Titel: </h2>
+                                    </div>
+                                    <div class="col-10">
+                                        <h2 class="listItemTitle item-value">
+                                            <%= item.title%>
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="row row-element">
+                                    <div class="col-2">
+                                        <div class="item-key">Portionen: </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <span class="listItemServings item-value">
+                                                <%= item.furPersonen %>
+                                            </span>
+                                    </div>
+                                </div>
+
+                                <div class="row row-element">
+                                    <div class="col-2">
+                                        <div class="item-key">Zutaten: </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="item-value">
+                                            <%= item.zutaten%>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-element">
+                                    <div class="col-2">
+                                        <div class="item-key">Zubereitungszeit: </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="item-value">
+                                            <% if(item.Zubereitungszeit != null) {%>
+                                                <%=item.Zubereitungszeit%> min
+                                                    <%} else {%>
+                                                        -
+                                                        <%}%>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-element">
+                                    <div class="col-2">
+                                        <div class="item-key">Schwierigkeitsgrad: </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="item-value">
+                                            <% if(item.Schwierigkeitsgrad != null) {%>
+                                                <%=item.Schwierigkeitsgrad%>
+                                                    <%} else {%>
+                                                        -
+                                                        <%}%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row row-element">
+                                    <div class="col-2">
+                                        <div class="item-key">Nährwerte gesamt:</div>
+                                    </div>
+                                </div>
+                                <div class="row row-nutrs">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Kcal:
+                                            <%=Math.round(item.Kcal*100)/100%>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Fett:
+                                            <%= Math.round(item.Fett/10)/100 %>g
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Kohlenhydrate:
+                                            <%= Math.round(item.Kohlenhydrate/10)/100%>g
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Eiweiß:
+                                            <%= Math.round(item.Eiweis/10)/100%>g
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Zink:
+                                            <%= Math.round(item.Zink/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Eisen:
+                                            <%= Math.round(item.Eisen/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Calcium:
+                                            <%= Math.round(item.Calcium*100)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Kalium:
+                                            <%= Math.round(item.Kalium*100)/100 %>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Magnesium:
+                                            <%= Math.round(item.Magnesium*100)/100 %>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Ballaststoffe:
+                                            <%= Math.round(item.Ballaststoffe/10)/100%>g
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Iodid:
+                                            <%= Math.round(item.Iodid*100)/100 %>µg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Linolsäure:
+                                            <%= Math.round(item.Linolsaeure*100)/100 %>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Linolensäure:
+                                            <%= Math.round(item.Linolensaeure*100)/100 %>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin A:
+                                            <%= Math.round(item.VitaminA/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin B1:
+                                            <%= Math.round(item.VitaminB1/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin B2:
+                                            <%= Math.round(item.VitaminB2/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin B6:
+                                            <%= Math.round(item.VitaminB6/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin B12:
+                                            <%= Math.round(item.VitaminB12*100)/100%>µg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin C:
+                                            <%= Math.round(item.VitaminC/10)/100%>mg
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            Vitamin E:
+                                            <%= Math.round(item.VitaminE/10)/100%>mg
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <%});%>
+                </div>
+            </div>
         </div>
     </div>
 </script>
+
 <script type="text/template" class="template-pagination">
     <nav aria-label="pagination">
         <ul class="pagination pg-blue justify-content-center">
             <li class="page-item active">
-                <a class="page-link" href="#page1" id="pagination1">
-                        1
-                    </a>
+                <a class="page-link" href="#page1" id="pagination1">1</a>
             </li>
 
             <% for(var i = 1; i < count;i++) {%>
                 <li class="page-item">
-                    <a class="page-link" href="#screenSearchResults" id="pagination<%=(i+1)%>">
+                    <a class="page-link" href="#page<%=(i+1)%>" id="pagination<%=(i+1)%>">
                         <%=(i+1)%>
                     </a>
                 </li>
@@ -48,6 +230,7 @@
 </script>
 <script type="text/template" class="template-modal">
     <!-- Modal -->
+
     <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -56,14 +239,16 @@
                 </div>
                 <div class="modal-body">
                     Möchten Sie dieses Rezept zu ihrer Historie hinzufügen?
+                    <br><br>
                     <div class="modalRecipeTitle"></div>
-                    Dieses Rezept wurde vom Verfasser für <span class="modalRecipeServings"></span> Portionen ausgelegt.
-                    <label for="sel1">Select list:</label>
+                    <br><br> Dieses Rezept wurde vom Verfasser für <span class="modalRecipeServings"></span> Portionen ausgelegt.
+                    <label for="sel1">Bitte geben Sie die ungefähre Menge von Ihnen verzehrter Portionen an:</label>
                     <select class="selectpicker show-menu-arrow" id="sel1">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </div>
                 <div class="modal-footer">
@@ -99,11 +284,14 @@
     <div class="userInfoBox container">
         <div class="row">
             <div class="col">
-                <div>Dein Nährwertverbrauch:</div>
+                <br>
+                <h2>Dein Nährwertverbrauch für heute:</h2>
+                <br>
 
-                <div>Kcal:</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: <%= (nutrs.Kcal/parseFloat(nutrRef.kCal))*100%>%">
+
+                <div class="progressTitle">Kcal:</div>
+                <div class="progress ">
+                    <div class="progress-bar <% if ((nutrs.Kcal/parseFloat(nutrRef.kCal))*100 > 100) {%>  bg-danger <%} else {%> bg-success <%}%>" role="progressbar" style="width: <%= (nutrs.Kcal/parseFloat(nutrRef.kCal))*100%>%">
                         <small class="justify-content-center d-flex position-absolute w-100">
             <%=nutrs.Kcal%> /
                 <%=nutrRef.kCal%>
@@ -117,7 +305,7 @@
                         <%= index %>:
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: <%= (nutrs[index]/parseFloat(nutrRef[index]))*100%>%">
+                        <div class="progress-bar <% if ((nutrs[index]/parseFloat(nutrRef[index]))*100 > 100) {%>  bg-danger <%} else {%> bg-success <%}%>" role="progressbar" style="width: <%= (nutrs[index]/parseFloat(nutrRef[index]))*100%>%">
                             <small class="justify-content-center d-flex position-absolute w-100"><%=nutrs[index]%> /
                     <%=nutrRef[index]%></small>
 
@@ -126,5 +314,7 @@
                     <%}%>
             </div>
         </div>
+        <br>
+        <br>
     </div>
 </script>
