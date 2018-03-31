@@ -1,10 +1,9 @@
-[
-    {
-        "recipe_href": "/rezept/368835/broetchenteig-ohne-mehl.html",
-        "ingredients_string": "1 tüte:backpulver \n 100 g:eiweisspulver \n 175 gr:frischkäse \n 30 g.:leinsamen \n 3 stueck:eier"
-	},
-    {
-        "recipe_href": "ID",
-        "ingredients_string": "Format: MENGE,LEERZEICHEN,EINHEIT,DOPPELPUNKT,ZUTAT,LEERZEICHEN,NEWLINE: 1 gramm:Mehl \n"
-	}
-]
+[{
+    "recipe_href": "/rezept/368835/broetchenteig-ohne-mehl.html",
+    "ingredients_string": "1 tüte:backpulver \n 100 g:eiweisspulver \n 175 gr:frischkäse \n 30 g.:leinsamen \n 3 stueck:eier"
+}
+,
+{
+    "recipe_href": "ID",
+    "ingredients_string": "Format: MENGE,LEERZEICHEN,EINHEIT,DOPPELPUNKT,ZUTAT,LEERZEICHEN,NEWLINE: 1 gramm:Mehl \n"
+}]
