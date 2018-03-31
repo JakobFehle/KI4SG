@@ -12,7 +12,7 @@ module.exports = (function () {
 
 
     api.get("/userInformation", function (req, res) {
-        var sqlQuery = 'SELECT * FROM newschema.users WHERE UserID = ' + db.escape(req.query.id) + ' AND Date LIKE "' + new Date().toISOString().slice(0, 10).replace('T', ' ') + ' %";';
+        var sqlQuery = 'SELECT * FROM kochbar.users WHERE UserID = ' + db.escape(req.query.id) + ' AND Date LIKE "' + new Date().toISOString().slice(0, 10).replace('T', ' ') + ' %";';
         db.query(sqlQuery, (err, nutritions) => {
             if (err) {
                 console.log(err);
@@ -21,7 +21,7 @@ module.exports = (function () {
                     "data": err
                 });
             }
-            var sqlQuery2 = 'SELECT * FROM newschema.referencenuts WHERE Geschlecht = ' + db.escape(req.query.sex) + ' AND newschema.referencenuts.Alter_Obergrenze > ' + db.escape(req.query.age) + ' AND newschema.referencenuts.Alter_Untergrenze <= ' + db.escape(req.query.age) + ' LIMIT 1;'
+            var sqlQuery2 = 'SELECT * FROM kochbar.referencenuts WHERE Geschlecht = ' + db.escape(req.query.sex) + ' AND kochbar.referencenuts.Alter_Obergrenze > ' + db.escape(req.query.age) + ' AND kochbar.referencenuts.Alter_Untergrenze <= ' + db.escape(req.query.age) + ' LIMIT 1;'
 
             db.query(sqlQuery2, (err, nutritionsRef) => {
                 if (err) {
@@ -43,13 +43,13 @@ module.exports = (function () {
         });
     });
     api.put("/userInformation", function (req, res) {
-        var sqlQuery1 = 'SELECT * FROM newschema.recipenuts WHERE RezeptID =' + db.escape(req.body.rezeptID) + ';',
+        var sqlQuery1 = 'SELECT * FROM kochbar.recipenuts WHERE RezeptID =' + db.escape(req.body.rezeptID) + ';',
             nuts;
 
         db.query(sqlQuery1, (err, rows) => {
             if (err) console.log(err);
             nuts = rows[0];
-            var sqlQuery2 = 'INSERT INTO newschema.users(UserID,RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12,Date) VALUES(' +
+            var sqlQuery2 = 'INSERT INTO kochbar.users(UserID,RezeptID,Kcal,Eiweis,Kohlenhydrate,Fett,Calcium,Kalium,Eisen,Zink,Magnesium,Ballaststoffe,Linolsaeure,Linolensaeure,Iodid,VitaminA,VitaminC,VitaminE,VitaminB1,VitaminB2,VitaminB6,VitaminB12,Date) VALUES(' +
                 db.escape(req.body.userID) + ',' +
                 db.escape(nuts.RezeptID) + ',' +
                 db.escape(parseFloat(nuts.Kcal) * parseFloat(req.body.propsEaten)) + ',' +
@@ -92,7 +92,7 @@ module.exports = (function () {
     api.get("/getRecipeInformation", function (req, res) {
         var searchString = req.query.text.toString(),
             searchStringArray = [],
-            sqlQuery = 'SELECT * FROM (SELECT * FROM newschema.recipenuts WHERE newschema.recipenuts.RezeptID LIKE ';
+            sqlQuery = 'SELECT * FROM (SELECT * FROM kochbar.recipenuts WHERE kochbar.recipenuts.RezeptID LIKE ';
 
         searchString = searchString.toLowerCase();
         searchString = searchString.replace(" von ", " ");
@@ -117,14 +117,14 @@ module.exports = (function () {
         sqlQuery += db.escape("%" + searchStringArray[0] + "%");
 
         for (var i = 1; i < searchStringArray.length; i++) {
-            sqlQuery += ' AND newschema.recipenuts.RezeptID LIKE ' + db.escape('%' + searchStringArray[i] + '%');
+            sqlQuery += ' AND kochbar.recipenuts.RezeptID LIKE ' + db.escape('%' + searchStringArray[i] + '%');
         }
 
-        sqlQuery += ' LIMIT 100) t1 inner join (SELECT title, zutaten, furPersonen, Schwierigkeitsgrad, Zubereitungszeit, recipe_href, numstars FROM newschema.kochbar_recipes WHERE newschema.kochbar_recipes.recipe_href LIKE ' +
+        sqlQuery += ' LIMIT 100) t1 inner join (SELECT title, zutaten, furPersonen, Schwierigkeitsgrad, Zubereitungszeit, recipe_href, numstars FROM kochbar.kochbar_recipes WHERE kochbar.kochbar_recipes.recipe_href LIKE ' +
             db.escape("%" + searchStringArray[0] + "%");
 
         for (var i = 1; i < searchStringArray.length; i++) {
-            sqlQuery += ' AND newschema.kochbar_recipes.recipe_href LIKE ' + db.escape('%' + searchStringArray[i] + '%');
+            sqlQuery += ' AND kochbar.kochbar_recipes.recipe_href LIKE ' + db.escape('%' + searchStringArray[i] + '%');
         }
 
         sqlQuery += ') t2 on t1.RezeptID = t2.recipe_href COLLATE utf8_unicode_ci;';
