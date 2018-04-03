@@ -1,12 +1,5 @@
 # KI4SG
 
-Programmfails:
+Dokumentation der Projektarbeit: doku/KI4SG_WS1718_Halbhuber_Fehle.pdf
 
-Eier -> Eier roh -> 0g
-Ei -> Hühnerei -> 50g
-
-
-Programm kann manchne Rezepte nicht parsen auf Grund fehlerhaften Mengenangaben (50gr., 80.gr, usw.)
-
-
-Erweiterungen: Suchverfahren der Datenbank verbessern und auf Zutaten/Beschreibung ausweiten
+Setup "How-To": doku/HowTo_KI4SG_WS1718_Halbhuber_Fehle.pdf
